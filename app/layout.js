@@ -23,14 +23,6 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
-        <meta
-          name="description"
-          content="AAPC operates in seamless collaboration with the NYC Department of Buildings (DOB) and other pertinent entities throughout the architectural process demonstrating a meticulous commitment to not only adhere to regulations but also navigate them with precision when intervening in established spaces"
-        />
-        <meta
-          name="keywords"
-          content="Architecture, AAPC, Building, Design, Drafting"
-        />
         <link rel="author" href="Azark Inc" />
         <link rel="canonical" href="https://aapc.nyc/" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
