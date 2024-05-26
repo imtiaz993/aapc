@@ -1,6 +1,5 @@
-import React from "react";
 import "../../../public/css/home.css";
-import ".../../../public/css/blog-details.css";
+import "../../../public/css/blog-details.css";
 
 export const metadata = {
   title: "AAPC | Blog Single",
@@ -69,7 +68,7 @@ const BlogSingle = () => {
             // console.log(document.getElementById('updatedDate'));
             if(formattedCreated === formattedUpdated){
             return `  */}{" "}
-      <div class="container" style={{ position: "relative" }}>
+      {/* <div class="container" style={{ position: "relative" }}>
         <div class="carousel-container row">
           <h1
             class="project-title"
@@ -92,14 +91,11 @@ const BlogSingle = () => {
           >
             <h3>${item.author}</h3>
             <h3 id="createdDate">Written: ${formattedCreated}</h3>
-            {/* <!--<h3>stat</h3>
-                <h3 style={{borderRight: "none"}}>stat</h3>--> */}
           </div>
         </div>
-        {/* {<!-- /row -->} */}
-      </div>
+      </div> */}
       {/* <!-- /container --> */}
-      <div class="flex-container" style={{ position: "relative" }}>
+      {/* <div class="flex-container" style={{ position: "relative" }}>
         <div class="flex-item-left"></div>
 
         <div class="flex-item-right">
@@ -107,10 +103,10 @@ const BlogSingle = () => {
             ${item.desc}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* `}
             return `  */}
-      <div class="container" style={{ position: "relative" }}>
+      {/* <div class="container" style={{ position: "relative" }}>
         <div class="carousel-container row">
           <h1
             class="project-title"
@@ -134,14 +130,11 @@ const BlogSingle = () => {
             <h3>${item.author}</h3>
             <h3 id="createdDate">Written: ${formattedCreated}</h3>
             <h3 id="updatedDate">Updated: ${formattedUpdated}</h3>
-            {/* <!--<h3>stat</h3>
-                <h3 style={{borderRight: "none"}}>stat</h3>--> */}
           </div>
         </div>
-        {/* <!-- /row --> */}
-      </div>
+      </div> */}
       {/* <!-- /container --> */}
-      <div class="flex-container" style={{ position: "relative" }}>
+      {/* <div class="flex-container" style={{ position: "relative" }}>
         <div class="flex-item-left"></div>
 
         <div class="flex-item-right">
@@ -149,10 +142,9 @@ const BlogSingle = () => {
             ${item.desc}
           </div>
         </div>
-      </div>
+      </div> */}
       `
-      {/* }
-    } */}
+     
       {/* 
     const getPosts = async () => {
         const data = await customFetch();

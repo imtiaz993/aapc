@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../public/css/home.css";
 import "../../../public/css/services.css";
 
@@ -879,7 +878,7 @@ const Services = () => {
                     zIndex: 2,
                   }}
                 >
-                  Submission of documentation for approval of the building's
+                  Submission of documentation for approval of the building&apos;s
                   intended use and occupancy.
                 </h3>
               </div>

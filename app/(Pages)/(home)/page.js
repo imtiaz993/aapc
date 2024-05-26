@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../public/css/home.css";
 import "../../../public/css/home-services.css";
 
@@ -71,9 +70,9 @@ const Home = () => {
               >
                 <h4 id="stepBody" class="g-s-c-text">
                   Our Team, Commences with an in-depth discussion to ascertain
-                  the project's scope, objectives, and financial parameters,
+                  the project&apos;s scope, objectives, and financial parameters,
                   which Involves a comprehensive assessment to gauge the
-                  project's viability, taking into account zoning regulations
+                  project&apos;s viability, taking into account zoning regulations
                   and other relevant considerations.
                 </h4>
               </div>
@@ -175,7 +174,7 @@ const Home = () => {
                 Allen, a dynamic professional at the intersection of business
                 and architecture, possesses a unique blend of academic prowess
                 and practical experience, exemplified by his undergraduate
-                degree in Finance and a master's in architecture.
+                degree in Finance and a master&apos;s in architecture.
               </h6>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../public/css/home.css";
 import "../../../public/css/blog.css";
 

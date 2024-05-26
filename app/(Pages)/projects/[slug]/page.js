@@ -1,7 +1,6 @@
-import React from "react";
 import Link from "next/link";
-import "../../../public/css/home.css";
-import "../../../public/css/project-details.css";
+import "../../../../public/css/home.css";
+import "../../../../public/css/project-details.css";
 
 export const metadata = {
   title: "AAPC | Gotham Hall",
@@ -323,7 +322,7 @@ const projectDetail = () => {
             1356 Broadway stands as a building unlike any other, steeped in
             multiple layers of history. As a protected landmark, AAPC embraced
             the responsibility of restoring its interior, meticulously ensuring
-            alignment with the building's rich history. We approached this
+            alignment with the building&apos;s rich history. We approached this
             endeavor with care, crafting each entrusted area to unveil a story
             that had been entwined within the passing years of the building.
             These meticulously restored spaces not only narrate a tale but also

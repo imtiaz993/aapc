@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../public/css/home.css";
 import "../../../public/css/projects.css";
 
@@ -119,7 +118,7 @@ const Projects = () => {
                     1356 Broadway stands as a building unlike any other, steeped
                     in multiple layers of history. As a protected landmark, AAPC
                     embraced the responsibility of restoring its interior,
-                    meticulously ensuring alignment with the building's rich
+                    meticulously ensuring alignment with the building&apos;s rich
                     history...
                   </h4>
                 </div>
