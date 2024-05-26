@@ -6,7 +6,7 @@ export const metadata = {
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div style={{ margin: "5%" }}>
       <h1>Privacy Policy</h1>
       <p>Last updated: December 05, 2023</p>
       <p>
@@ -513,19 +513,6 @@ const PrivacyPolicy = () => {
       <ul>
         <li>By email: admin@aapc.nyc</li>
       </ul>
-
-      {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function () {
-  Calendly.initBadgeWidget({
-    url: 'https://calendly.com/general-services',
-    text: 'Free Consultation',
-    color: '#FFDC32',
-    textColor: '#1b1b1b',
-    branding: false,
-    zIndex: 100
-  });
-}</script> */}
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import "../../../public/css/home.css";
+import ".../../../public/css/blog-details.css";
 
 export const metadata = {
   title: "AAPC | Blog Single",
@@ -10,20 +12,8 @@ export const metadata = {
 const BlogSingle = () => {
   return (
     <div>
-      {/* <style>
-    #the-text{
-        margin: 5vmax;
-    }
-
-    #hotels img{
-        width: 100%;
-        padding: 5%;
-    }
-    </style> */}
-
       <div data-tilt data-tilt-glare data-tilt-max-glare="0.1"></div>
       <div id="hotels">{/* <!-- partial:index.partial.html --> */}</div>
-
       {/* <script>
     function GetURLParameter(sParam)
     {
@@ -78,74 +68,92 @@ const BlogSingle = () => {
             // if (formattedCreated === formattedUpdated) document.getElementById('updatedDate').classList.add('hidden')
             // console.log(document.getElementById('updatedDate'));
             if(formattedCreated === formattedUpdated){
-            return `  */}   <div class="container" style={{position: "relative"}}>
-        <div  class="carousel-container row">
-            <h1 class="project-title" data-tilt data-tilt-glare data-tilt-max-glare="0.1">${item.title}</h1>
+            return `  */}{" "}
+      <div class="container" style={{ position: "relative" }}>
+        <div class="carousel-container row">
+          <h1
+            class="project-title"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.1"
+          >
+            ${item.title}
+          </h1>
 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <img src="${item.photo}" style={{width: "100%"}}/>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <img src="${item.photo}" style={{ width: "100%" }} />
+          </div>
 
-            </div>
-
-            <div class="stats" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                <h3>${item.author}</h3>
-                <h3 id="createdDate">Written: ${formattedCreated}</h3>
-                {/* <!--<h3>stat</h3>
+          <div
+            class="stats"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.1"
+          >
+            <h3>${item.author}</h3>
+            <h3 id="createdDate">Written: ${formattedCreated}</h3>
+            {/* <!--<h3>stat</h3>
                 <h3 style={{borderRight: "none"}}>stat</h3>--> */}
-            </div>
-        </div> 
+          </div>
+        </div>
         {/* {<!-- /row -->} */}
-    </div> 
-    {/* <!-- /container --> */}
-
-    <div class="flex-container" style={{position: "relative"}}>
-        <div class="flex-item-left">
-        </div>
+      </div>
+      {/* <!-- /container --> */}
+      <div class="flex-container" style={{ position: "relative" }}>
+        <div class="flex-item-left"></div>
 
         <div class="flex-item-right">
-            <div id="the-text" class="about-text">
-                ${item.desc}
-            </div>
-
+          <div id="the-text" class="about-text">
+            ${item.desc}
+          </div>
         </div>
-    </div>
- {/* `}
+      </div>
+      {/* `}
             return `  */}
-            <div class="container" style={{position: "relative"}}>
-        <div  class="carousel-container row">
-            <h1 class="project-title" data-tilt data-tilt-glare data-tilt-max-glare="0.1">${item.title}</h1>
+      <div class="container" style={{ position: "relative" }}>
+        <div class="carousel-container row">
+          <h1
+            class="project-title"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.1"
+          >
+            ${item.title}
+          </h1>
 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <img src="${item.photo}" style={{width: "100%"}}/>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <img src="${item.photo}" style={{ width: "100%" }} />
+          </div>
 
-            </div>
-
-            <div class="stats" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                <h3>${item.author}</h3>
-                <h3 id="createdDate">Written: ${formattedCreated}</h3>
-                <h3 id="updatedDate">Updated: ${formattedUpdated}</h3>
-                {/* <!--<h3>stat</h3>
+          <div
+            class="stats"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.1"
+          >
+            <h3>${item.author}</h3>
+            <h3 id="createdDate">Written: ${formattedCreated}</h3>
+            <h3 id="updatedDate">Updated: ${formattedUpdated}</h3>
+            {/* <!--<h3>stat</h3>
                 <h3 style={{borderRight: "none"}}>stat</h3>--> */}
-            </div>
+          </div>
         </div>
-         {/* <!-- /row --> */}
-    </div> 
-    {/* <!-- /container --> */}
-
-    <div class="flex-container" style={{position:"relative"}}>
-        <div class="flex-item-left">
-        </div>
+        {/* <!-- /row --> */}
+      </div>
+      {/* <!-- /container --> */}
+      <div class="flex-container" style={{ position: "relative" }}>
+        <div class="flex-item-left"></div>
 
         <div class="flex-item-right">
-            <div id="the-text" class="about-text">
-                ${item.desc}
-            </div>
-
+          <div id="the-text" class="about-text">
+            ${item.desc}
+          </div>
         </div>
-    </div>`
-        {/* }
+      </div>
+      `
+      {/* }
     } */}
-{/* 
+      {/* 
     const getPosts = async () => {
         const data = await customFetch();
         const post = createListItem(data)
@@ -170,27 +178,11 @@ const BlogSingle = () => {
 </script>
 
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js'></script>
-<script src="/js/vanilla-tilt.js"></script>
-<script src="/js/project-details.js"></script>
 
 
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function () {
-    Calendly.initBadgeWidget({
-        url: 'https://calendly.com/general-services',
-        text: 'Free Consultation',
-        color: '#FFDC32',
-        textColor: '#1b1b1b',
-        branding: false,
-        zIndex: 100
-    });
-}</script>  */}
+
+
+  */}
     </div>
   );
 };

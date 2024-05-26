@@ -152,6 +152,14 @@
     opacity: 0;
 }
 
+#the-text{
+    margin: 5vmax;
+}
+
+#hotels img{
+    width: 100%;
+    padding: 5%;
+}
 
 @media all and (max-width: 767px) {
     .carousel-container #carousel-thumbs img {

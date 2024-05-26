@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/link";
+import "../../../public/css/home.css";
+import "../../../public/css/home-services.css";
 
 export const metadata = {
   title: "AAPC | Home",
@@ -11,52 +12,6 @@ export const metadata = {
 const Home = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <Link class="navbar-brand d-md-none" href="/">
-            <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
-          </Link>
-          <button
-            class="navbar-toggler navbar-dark"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" href="/">
-                  Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" href="/services">
-                  Services
-                </Link>
-              </li>
-              <Link class="navbar-brand d-none d-md-block" href="/">
-                <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
-              </Link>
-              <li class="nav-item">
-                <Link class="nav-link" href="/projects">
-                  Projects
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" href="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       <div class="home-topper">
         <div
           class="box-1"
@@ -227,85 +182,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          position: "relative",
-          width: "85%",
-          borderTop: "rgba(255, 255, 255, 0.40) solid 1px",
-          margin: "auto",
-        }}
-      >
-        <footer
-          style={{
-            position: "relative",
-            borderBottom: "rgba(255, 255, 255, 0.40) solid 1px",
-            marginBottom: "1vh",
-            display: "flex",
-          }}
-        >
-          <div class="footer-left">
-            <img
-              loading="lazy"
-              src="/img/AAPC_Logo.png"
-              id="footer-img"
-              class="nav-img"
-              alt="AAPC_Logo"
-            />
-            <p
-              style={{
-                opacity: 0.6,
-                marginBottom: "3vh",
-                lineHeight: 2.5,
-              }}
-            >
-              AAPC is an all-encompassing, conscious team of experts that take
-              pride in investing in the future of buildings, our clients and
-              their clients.
-            </p>
-          </div>
-          <div class="footer-middle">
-            <h2
-              style={{
-                borderBottom: "#FFDC32 2px solid",
-                display: "inline-block",
-              }}
-            >
-              Contact Us
-            </h2>
-            <p onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')">
-              <span class="fas fa-location-arrow text-white"></span> 130 W 37th
-              Street New York, NY 10018
-            </p>
-            <p onclick="window.location.href = 'tel:212-547-9050'">
-              <span class="fas fa-phone text-white"></span>212-547-9050
-            </p>
-            <p onclick="window.location.href = 'mailto:admin@aapc.nyc';">
-              <span class="fas fa-envelope text-white"></span>admin@aapc.nyc
-            </p>
-          </div>
-          <div class="footer-right">
-            <h2
-              style={{
-                borderBottom: "#FFDC32 2px solid",
-                display: "inline-block",
-              }}
-            >
-              Pages
-            </h2>
-            <p onclick="location.assign('/');">Home</p>
-            <p onclick="location.assign('/services');">Services</p>
-            <p onclick="location.assign('/projects');">Projects</p>
-            <p onclick="location.assign('/contact');">Contact</p>
-            <p onclick="location.assign('/blog');">Blog</p>
-          </div>
-        </footer>
-        <Link class="pptos" href="/privacy-policy">
-          Privacy Policy
-        </Link>
-      </div>
-      <script src="/js/script.js"></script>
-      <script src="/js/vanilla-tilt.js"></script>
-
       {/* <script>
         $(document).scroll(function () {
             var wrapper = $('#about-left');
@@ -380,18 +256,7 @@ const Home = () => {
         });
     </script>
     
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function () {
-        Calendly.initBadgeWidget({
-            url: 'https://calendly.com/general-services',
-            text: 'Free Consultation',
-            color: '#FFDC32',
-            textColor: '#1b1b1b',
-            branding: false,
-            zIndex: 100
-        })
-    }</script> */}
+*/}
     </div>
   );
 };

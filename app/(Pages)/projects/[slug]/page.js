@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import "../../../public/css/home.css";
+import "../../../public/css/project-details.css";
 
 export const metadata = {
   title: "AAPC | Gotham Hall",
@@ -442,27 +444,9 @@ const projectDetail = () => {
 </script>
 
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js'></script>
-<script src="../js/vanilla-tilt.js"></script>
-<script src="../js/project-details.js"></script>
 
 
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function () {
-    Calendly.initBadgeWidget({
-        url: 'https://calendly.com/general-services',
-        text: 'Free Consultation',
-        color: '#FFDC32',
-        textColor: '#1b1b1b',
-        branding: false,
-        zIndex: 100
-    });
-}</script> */}
+*/}
     </div>
   );
 };

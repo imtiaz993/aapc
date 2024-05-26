@@ -1,4 +1,6 @@
 import React from "react";
+import "../../../public/css/home.css";
+import "../../../public/css/blog.css";
 
 export const metadata = {
   title: "AAPC | Blog Posts",
@@ -161,10 +163,6 @@ const Blog = () => {
 
 </script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='js/vanilla-tilt.js'></script>
-<script src='js/projects.js'></script>
 
 
 <script>
@@ -192,18 +190,7 @@ const Blog = () => {
     });
 </script>
 
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function () {
-    Calendly.initBadgeWidget({
-        url: 'https://calendly.com/general-services',
-        text: 'Free Consultation',
-        color: '#FFDC32',
-        textColor: '#1b1b1b',
-        branding: false,
-        zIndex: 100
-    });
-}</script> */}
+ */}
     </div>
   );
 };
