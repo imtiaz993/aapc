@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const metadata = {
   title: "AAPC | Home",
@@ -12,9 +13,9 @@ const Home = () => {
     <div>
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a class="navbar-brand d-md-none" href="/">
+          <Link class="navbar-brand d-md-none" href="/">
             <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
-          </a>
+          </Link>
           <button
             class="navbar-toggler navbar-dark"
             type="button"
@@ -29,27 +30,27 @@ const Home = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">
+                <Link class="nav-link active" aria-current="page" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/services">
+                <Link class="nav-link" href="/services">
                   Services
-                </a>
+                </Link>
               </li>
-              <a class="navbar-brand d-none d-md-block" href="/">
+              <Link class="navbar-brand d-none d-md-block" href="/">
                 <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
-              </a>
+              </Link>
               <li class="nav-item">
-                <a class="nav-link" href="/projects">
+                <Link class="nav-link" href="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact">
+                <Link class="nav-link" href="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -298,9 +299,9 @@ const Home = () => {
             <p onclick="location.assign('/blog');">Blog</p>
           </div>
         </footer>
-        <a class="pptos" href="/privacy-policy">
+        <Link class="pptos" href="/privacy-policy">
           Privacy Policy
-        </a>
+        </Link>
       </div>
       <script src="/js/script.js"></script>
       <script src="/js/vanilla-tilt.js"></script>

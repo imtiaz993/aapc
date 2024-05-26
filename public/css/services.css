@@ -1,5 +1,5 @@
 .section-left-projects {
-    text-align: left;
+    text-align: left !important;
 }
 
 #planning {

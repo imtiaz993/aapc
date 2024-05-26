@@ -8,14 +8,14 @@
 }
 
 input {
-    margin: 1vmax 3vmax;
+    margin: 1vmax 3vmax !important ;
     background-color: transparent;
     border: none;
     border-bottom: #FFDC32 2px solid;
 }
 
 textarea {
-    margin: 1vmax 3vmax;
+    margin: 1vmax 3vmax !important;
     background-color: transparent;
     border: none;
     border-bottom: #FFDC32 2px solid;
