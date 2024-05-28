@@ -3,8 +3,8 @@ import AboutButtons from "./components/about-buttons";
 import Planning from "./components/planning";
 import Visualization from "./components/visualization";
 import ProjectManagement from "./components/project-management";
-import "../../../public/css/home.css";
-import "../../../public/css/services.css";
+import "../../../../public/css/home.css";
+import "../../../../public/css/services.css";
 
 export const metadata = {
   title: "AAPC | Services",

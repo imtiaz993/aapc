@@ -1,7 +1,7 @@
 import Topper from "./components/topper";
 import RecentPosts from "./components/recent-posts";
-import "../../../public/css/home.css";
-import "../../../public/css/blog.css";
+import "../../../../public/css/home.css";
+import "../../../../public/css/blog.css";
 
 export const metadata = {
   title: "AAPC | Blog Posts",
