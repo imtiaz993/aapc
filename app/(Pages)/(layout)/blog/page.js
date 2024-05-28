@@ -49,9 +49,9 @@ const Blog = () => {
                 day: "numeric",
                 year: "numeric",
             })
-            return ` <div class="flex-container width-full reverse" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');" style={{marginTop: "5%"}>
-                <div class="project-left">
-                    <div class="project-left-content">
+            return ` <div className="flex-container width-full reverse" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');" style={{marginTop: "5%"}>
+                <div className="project-left">
+                    <div className="project-left-content">
                         <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                            ${item.title}
                         </h1><br/>
@@ -60,8 +60,8 @@ const Blog = () => {
                         <h4>${item.clincher}</h4>
                         </div>
                 </div>
-                <div class="project-right">
-                    <div class="project-right-pic" style={{background: "url(${item.photo})", backgroundSize: "cover"}} data-tilt data-tilt-glare data-tilt-max-glare="0.1"></div>
+                <div className="project-right">
+                    <div className="project-right-pic" style={{background: "url(${item.photo})", backgroundSize: "cover"}} data-tilt data-tilt-glare data-tilt-max-glare="0.1"></div>
                 </div>
             </div>`
         }

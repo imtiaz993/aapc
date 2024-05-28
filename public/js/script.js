@@ -6,7 +6,7 @@
                 $cards = $container.find(".slide-card"),
                 $text_container = $this.find(".slides-text-container"),
                 $text = $text_container.find(".side-text"),
-                $indicator = $('<ul class="slides-indicator" />').appendTo(this),
+                $indicator = $('<ul className="slides-indicator" />').appendTo(this),
                 in_animation = false,
                 defaults = {
                     speed: 200,

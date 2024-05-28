@@ -41,14 +41,14 @@ const About = () => {
   }, []);
 
   return (
-    <div class="flex-container">
-      <div class="flex-item-left" id="about-left">
-        <h1 class="left-text" id="about-left-text">
+    <div className="flex-container">
+      <div className="flex-item-left" id="about-left">
+        <h1 className="left-text" id="about-left-text">
           Who We Are
         </h1>
       </div>
-      <div class="flex-item-right">
-        <h1 class="section-title">
+      <div className="flex-item-right">
+        <h1 className="section-title">
           About{" "}
           <b
             style={{
@@ -58,7 +58,7 @@ const About = () => {
             AAPC
           </b>
         </h1>
-        <h3 class="about-text">
+        <h3 className="about-text">
           AAPC operates in seamless collaboration with the NYC Department of
           Buildings (DOB) and other pertinent entities throughout the
           architectural process demonstrating a meticulous commitment to not

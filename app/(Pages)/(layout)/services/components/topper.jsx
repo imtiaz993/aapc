@@ -30,28 +30,28 @@ const Topper = () => {
       }}
     ></div>
 
-    <div class="top-wrapper">
+    <div className="top-wrapper">
       <h1
-        class="topper-title"
+        className="topper-title"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.1"
       >
         Services
       </h1>
-      <div class="title-wrapper">
-        <h3 id="planning-top-title" class="topper-subtitle">
+      <div className="title-wrapper">
+        <h3 id="planning-top-title" className="topper-subtitle">
           Planning
         </h3>
-        <h3 id="visualization-top-title" class="topper-subtitle">
+        <h3 id="visualization-top-title" className="topper-subtitle">
           Visualization
         </h3>
-        <h3 id="project-management-top-title" class="topper-subtitle">
+        <h3 id="project-management-top-title" className="topper-subtitle">
           Project Management
         </h3>
       </div>
 
-      <h3 id="planning-top" class="topper-blurb">
+      <h3 id="planning-top" className="topper-blurb">
         This multifaceted discipline involves collaborating with clients to
         understand their needs, conceptualizing innovative design solutions,
         and navigating regulatory frameworks. From the initial stages of
@@ -59,7 +59,7 @@ const Topper = () => {
         and specifications, architectural planning is a dynamic process that
         integrates creativity, functionality, and compliance.{" "}
       </h3>
-      <h3 id="visualization-top" class="topper-blurb">
+      <h3 id="visualization-top" className="topper-blurb">
         Architectural visualization services are an integral aspect of
         modern design, employing advanced technology to create immersive and
         realistic representations of architectural concepts. This not only
@@ -67,7 +67,7 @@ const Topper = () => {
         stakeholders but also allows for informed decision-making by
         providing a vivid preview of the final built environment.{" "}
       </h3>
-      <h3 id="project-management-top" class="topper-blurb">
+      <h3 id="project-management-top" className="topper-blurb">
         Project management services encompass the orchestration and
         coordination of all aspects involved in bringing an architectural
         vision to fruition. This comprehensive role involves overseeing

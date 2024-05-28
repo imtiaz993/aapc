@@ -43,12 +43,12 @@ const Planning = () => {
   return (
     <ServicesWrapper>
       <div
-        class="flex-item-right"
+        className="flex-item-right"
         id="planning"
         style={{ position: "relative" }}
       >
         <div
-          class="flex-container service-section"
+          className="flex-container service-section"
           style={{
             borderTop: "none",
             marginBottom: "0",
@@ -56,14 +56,14 @@ const Planning = () => {
             width: "100%",
           }}
         >
-          <div class="section-left-projects">
+          <div className="section-left-projects">
             <div
-              class="vendor-box left-service"
+              className="vendor-box left-service"
               data-tilt
               data-tilt-glare
               data-tilt-max-glare="0.1"
             >
-              <div class="gold-bg"></div>
+              <div className="gold-bg"></div>
               <img
                 loading="lazy"
                 alt="service-bg-img"
@@ -91,12 +91,12 @@ const Planning = () => {
               </h3>
             </div>
             <div
-              class="vendor-box left-service"
+              className="vendor-box left-service"
               data-tilt
               data-tilt-glare
               data-tilt-max-glare="0.1"
             >
-              <div class="gold-bg"></div>
+              <div className="gold-bg"></div>
               <img
                 loading="lazy"
                 alt="service-bg-img"
@@ -124,12 +124,12 @@ const Planning = () => {
               </h3>
             </div>
             <div
-              class="vendor-box left-service"
+              className="vendor-box left-service"
               data-tilt
               data-tilt-glare
               data-tilt-max-glare="0.1"
             >
-              <div class="gold-bg"></div>
+              <div className="gold-bg"></div>
               <img
                 loading="lazy"
                 alt="service-bg-img"
@@ -157,14 +157,14 @@ const Planning = () => {
               </h3>
             </div>
           </div>
-          <div class="section-right-projects">
+          <div className="section-right-projects">
             <div
-              class="vendor-box right-service"
+              className="vendor-box right-service"
               data-tilt
               data-tilt-glare
               data-tilt-max-glare="0.1"
             >
-              <div class="gold-bg"></div>
+              <div className="gold-bg"></div>
               <img
                 loading="lazy"
                 alt="service-bg-img"
@@ -192,12 +192,12 @@ const Planning = () => {
               </h3>
             </div>
             <div
-              class="vendor-box right-service"
+              className="vendor-box right-service"
               data-tilt
               data-tilt-glare
               data-tilt-max-glare="0.1"
             >
-              <div class="gold-bg"></div>
+              <div className="gold-bg"></div>
               <img
                 loading="lazy"
                 alt="service-bg-img"

@@ -22,12 +22,12 @@ const Footer = () => {
           display: "flex",
         }}
       >
-        <div class="footer-left">
+        <div className="footer-left">
           <img
             loading="lazy"
             src="/img/AAPC_Logo.png"
             id="footer-img"
-            class="nav-img"
+            className="nav-img"
             alt="AAPC_Logo"
           />
           <p
@@ -42,7 +42,7 @@ const Footer = () => {
             clients.
           </p>
         </div>
-        <div class="footer-middle">
+        <div className="footer-middle">
           <h2
             style={{
               borderBottom: "#FFDC32 2px solid",
@@ -52,17 +52,17 @@ const Footer = () => {
             Contact Us
           </h2>
           <p onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')">
-            <span class="fas fa-location-arrow text-white"></span> 130 W 37th
+            <span className="fas fa-location-arrow text-white"></span> 130 W 37th
             Street New York, NY 10018
           </p>
           <p onclick="window.location.href = 'tel:212-547-9050'">
-            <span class="fas fa-phone text-white"></span>212-547-9050
+            <span className="fas fa-phone text-white"></span>212-547-9050
           </p>
           <p onclick="window.location.href = 'mailto:admin@aapc.nyc';">
-            <span class="fas fa-envelope text-white"></span>admin@aapc.nyc
+            <span className="fas fa-envelope text-white"></span>admin@aapc.nyc
           </p>
         </div>
-        <div class="footer-right">
+        <div className="footer-right">
           <h2
             style={{
               borderBottom: "#FFDC32 2px solid",
@@ -108,7 +108,7 @@ const Footer = () => {
           </p>
         </div>
       </footer>
-      <Link class="pptos" href="/privacy-policy">
+      <Link className="pptos" href="/privacy-policy">
         Privacy Policy
       </Link>
     </div>

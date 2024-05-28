@@ -30,20 +30,20 @@ const Topper = () => {
           }}
         ></div>
 
-        <div class="top-wrapper">
+        <div className="top-wrapper">
           <h1
-            class="topper-title"
+            className="topper-title"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
           >
             Contact Us
           </h1>
-          <div class="title-wrapper">
-            <h3 class="topper-subtitle">Get in Touch</h3>
+          <div className="title-wrapper">
+            <h3 className="topper-subtitle">Get in Touch</h3>
           </div>
 
-          <h3 class="topper-blurb">
+          <h3 className="topper-blurb">
             Are you a property manager, real estate mogul or an Architect? We
             invite you to learn more about us and discover the vast ways that we
             can assist you. We look forward to the opportunity to discuss

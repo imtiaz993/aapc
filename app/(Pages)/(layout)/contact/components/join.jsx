@@ -41,13 +41,13 @@ const Join = () => {
   }, []);
 
   return (
-    <div class="flex-container" style={{ position: "relative" }}>
-      <div id="join-left" class="flex-item-left">
-        <h1 id="join-left-text" class="left-text">
+    <div className="flex-container" style={{ position: "relative" }}>
+      <div id="join-left" className="flex-item-left">
+        <h1 id="join-left-text" className="left-text">
           Join
         </h1>
       </div>
-      <div class="flex-item-right" style={{ position: "relative" }}>
+      <div className="flex-item-right" style={{ position: "relative" }}>
         <h1 id="apply-text" style={{ margin: "3vmax" }}>
           We are always looking for talented individuals to join our team.
           Interested? Connect with us by filling out the form below.
@@ -101,8 +101,8 @@ const Join = () => {
             name="message"
             id="message2"
           ></textarea>
-          <button type="submit" class="button">
-            <h1 style={{ marginLeft: "-6%" }} class="button-text">
+          <button type="submit" className="button">
+            <h1 style={{ marginLeft: "-6%" }} className="button-text">
               Apply
             </h1>
           </button>

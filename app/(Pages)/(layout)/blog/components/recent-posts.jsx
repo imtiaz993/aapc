@@ -41,14 +41,14 @@ const RecentPosts = () => {
   }, []);
 
   return (
-    <div class="flex-container" style={{ position: "relative" }}>
-      <div id="side" class="flex-item-left">
-        <h1 class="left-text" id="hotels-title">
+    <div className="flex-container" style={{ position: "relative" }}>
+      <div id="side" className="flex-item-left">
+        <h1 className="left-text" id="hotels-title">
           Recent Posts
         </h1>
       </div>
       <div
-        class="flex-item-right"
+        className="flex-item-right"
         style={{ position: "relative", overflow: "hidden" }}
       >
         <div id="hotels"></div>

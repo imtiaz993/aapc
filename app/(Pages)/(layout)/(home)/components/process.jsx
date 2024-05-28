@@ -1,36 +1,36 @@
 const Process = () => {
   return (
     <div
-      class="flex-container"
+      className="flex-container"
       style={{
         position: "relative",
       }}
     >
-      <div class="flex-item-left" id=""></div>
-      <div class="flex-item-right">
+      <div className="flex-item-left" id=""></div>
+      <div className="flex-item-right">
         <div
-          class="glass-section-header"
+          className="glass-section-header"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.1"
         >
-          <h1 class="g-s-h-text">Our Process</h1>
+          <h1 className="g-s-h-text">Our Process</h1>
         </div>
         <div id="stepContainer">
           <img
             loading="lazy"
             id="stepImg"
-            class="step-section-img"
+            className="step-section-img"
             src="/project/content/113 Franklin/IMG_6183.jpeg"
             alt="building"
           />
           <div
-            class="glass-section-content"
+            className="glass-section-content"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
           >
-            <h1 id="stepTitle" class="g-s-c-text-top">
+            <h1 id="stepTitle" className="g-s-c-text-top">
               Feasibility
             </h1>
             <div
@@ -40,7 +40,7 @@ const Process = () => {
                 overflow: "auto",
               }}
             >
-              <h4 id="stepBody" class="g-s-c-text">
+              <h4 id="stepBody" className="g-s-c-text">
                 Our Team, Commences with an in-depth discussion to ascertain the
                 project&apos;s scope, objectives, and financial parameters,
                 which Involves a comprehensive assessment to gauge the

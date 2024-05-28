@@ -16,11 +16,11 @@ $('[id^=carousel-selector-]').click(function () {
 if ($(window).width() < 575) {
     $('#carousel-thumbs .row div:nth-child(4)').each(function () {
         var rowBoundary = $(this);
-        $('<div class="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
+        $('<div className="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
     });
     $('#carousel-thumbs .carousel-item .row:nth-child(even)').each(function () {
         var boundary = $(this);
-        $('<div class="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
+        $('<div className="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
     });
 }
 // Hide slide arrows if too few items.

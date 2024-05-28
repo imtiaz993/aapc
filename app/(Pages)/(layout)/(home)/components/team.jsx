@@ -41,24 +41,24 @@ const Team = () => {
   }, []);
 
   return (
-    <div class="flex-container">
-      <div class="flex-item-left" id="services-left">
-        <h1 class="left-text" id="services-left-text">
+    <div className="flex-container">
+      <div className="flex-item-left" id="services-left">
+        <h1 className="left-text" id="services-left-text">
           Our Team
         </h1>
       </div>
-      <div class="flex-item-right">
-        <div id="biosection" class="flex-container home-service">
+      <div className="flex-item-right">
+        <div id="biosection" className="flex-container home-service">
           <div
             style={{
               flex: "30%",
             }}
           >
-            <div class="container">
-              <div class="card-stack">
-                <ul class="ul-card card-list">
+            <div className="container">
+              <div className="card-stack">
+                <ul className="ul-card card-list">
                   <li
-                    class="li-card card"
+                    className="li-card card"
                     style={{
                       background: "url('/img/pierre.png')",
                       backgroundSize: "cover",
@@ -69,7 +69,7 @@ const Team = () => {
                     data-tilt-max-glare="0.1"
                   ></li>
                   <li
-                    class="li-card card"
+                    className="li-card card"
                     id="firstcard"
                     style={{
                       background: "url('/img/allen_azarkian.png')",
@@ -81,8 +81,8 @@ const Team = () => {
                     data-tilt-max-glare="0.1"
                   ></li>
                 </ul>
-                <a class="buttons button next" onclick="toggleContent()">
-                  <h1 class="bio-button">Next</h1>
+                <a className="buttons button next" onclick="toggleContent()">
+                  <h1 className="bio-button">Next</h1>
                 </a>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Team = () => {
             <p id="personTitle">Principal Architect</p>
             <h6
               id="personDescription"
-              class="services-subtext"
+              className="services-subtext"
               style={{ color: "rgba(255, 255, 255, 0.65)" }}
             >
               Allen, a dynamic professional at the intersection of business and

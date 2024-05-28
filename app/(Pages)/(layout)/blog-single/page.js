@@ -68,10 +68,10 @@ const BlogSingle = () => {
             // console.log(document.getElementById('updatedDate'));
             if(formattedCreated === formattedUpdated){
             return `  */}{" "}
-      {/* <div class="container" style={{ position: "relative" }}>
-        <div class="carousel-container row">
+      {/* <div className="container" style={{ position: "relative" }}>
+        <div className="carousel-container row">
           <h1
-            class="project-title"
+            className="project-title"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
@@ -79,12 +79,12 @@ const BlogSingle = () => {
             ${item.title}
           </h1>
 
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <img src="${item.photo}" style={{ width: "100%" }} />
           </div>
 
           <div
-            class="stats"
+            className="stats"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
@@ -95,21 +95,21 @@ const BlogSingle = () => {
         </div>
       </div> */}
       {/* <!-- /container --> */}
-      {/* <div class="flex-container" style={{ position: "relative" }}>
-        <div class="flex-item-left"></div>
+      {/* <div className="flex-container" style={{ position: "relative" }}>
+        <div className="flex-item-left"></div>
 
-        <div class="flex-item-right">
-          <div id="the-text" class="about-text">
+        <div className="flex-item-right">
+          <div id="the-text" className="about-text">
             ${item.desc}
           </div>
         </div>
       </div> */}
       {/* `}
             return `  */}
-      {/* <div class="container" style={{ position: "relative" }}>
-        <div class="carousel-container row">
+      {/* <div className="container" style={{ position: "relative" }}>
+        <div className="carousel-container row">
           <h1
-            class="project-title"
+            className="project-title"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
@@ -117,12 +117,12 @@ const BlogSingle = () => {
             ${item.title}
           </h1>
 
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <img src="${item.photo}" style={{ width: "100%" }} />
           </div>
 
           <div
-            class="stats"
+            className="stats"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
@@ -134,11 +134,11 @@ const BlogSingle = () => {
         </div>
       </div> */}
       {/* <!-- /container --> */}
-      {/* <div class="flex-container" style={{ position: "relative" }}>
-        <div class="flex-item-left"></div>
+      {/* <div className="flex-container" style={{ position: "relative" }}>
+        <div className="flex-item-left"></div>
 
-        <div class="flex-item-right">
-          <div id="the-text" class="about-text">
+        <div className="flex-item-right">
+          <div id="the-text" className="about-text">
             ${item.desc}
           </div>
         </div>

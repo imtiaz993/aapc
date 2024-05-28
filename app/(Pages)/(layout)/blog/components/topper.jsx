@@ -44,20 +44,20 @@ const Topper = () => {
         }}
       ></div>
 
-      <div class="top-wrapper">
+      <div className="top-wrapper">
         <h1
-          class="topper-title"
+          className="topper-title"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.1"
         >
           Blog Posts
         </h1>
-        <div class="title-wrapper">
-          <h3 class="topper-subtitle">What We Do</h3>
+        <div className="title-wrapper">
+          <h3 className="topper-subtitle">What We Do</h3>
         </div>
 
-        <h3 id="planning-top" class="topper-blurb">
+        <h3 id="planning-top" className="topper-blurb">
           Explore our blog for the latest news and tips on everything
           architecture related.
         </h3>

@@ -1,129 +1,129 @@
 import Link from "next/link";
 const Detail = () => {
   return (
-    <div class="flex-container" style={{ position: "relative" }}>
-      <div class="flex-item-left"></div>
+    <div className="flex-container" style={{ position: "relative" }}>
+      <div className="flex-item-left"></div>
 
-      <div class="flex-item-right">
-        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row mx-0">
+      <div className="flex-item-right">
+        <div id="carousel-thumbs" className="carousel slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="row mx-0">
                 <div
                   id="carousel-selector-0"
-                  class="thumb col-4 col-sm-2 px-1 py-2 selected"
+                  className="thumb col-4 col-sm-2 px-1 py-2 selected"
                   data-target="#myCarousel"
                   data-slide-to="0"
                 >
                   <img
                     src="/project/content/gotham/1.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-1"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="1"
                 >
                   <img
                     src="/project/content/gotham/2.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-2"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="2"
                 >
                   <img
                     src="/project/content/gotham/3.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-3"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="3"
                 >
                   <img
                     src="/project/content/gotham/4.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-4"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="4"
                 >
                   <img
                     src="/project/content/gotham/5.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-5"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="5"
                 >
                   <img
                     src="/project/content/gotham/6.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row mx-0">
+            <div className="carousel-item">
+              <div className="row mx-0">
                 <div
                   id="carousel-selector-6"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="6"
                 >
                   <img
                     src="/project/content/gotham/7.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-7"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="7"
                 >
                   <img
                     src="/project/content/gotham/8.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div
                   id="carousel-selector-8"
-                  class="thumb col-4 col-sm-2 px-1 py-2"
+                  className="thumb col-4 col-sm-2 px-1 py-2"
                   data-target="#myCarousel"
                   data-slide-to="8"
                 >
                   <img
                     src="/project/content/gotham/9.JPEG"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="..."
                   />
                 </div>
 
-                <div class="col-2 px-1 py-2"></div>
-                <div class="col-2 px-1 py-2"></div>
+                <div className="col-2 px-1 py-2"></div>
+                <div className="col-2 px-1 py-2"></div>
               </div>
             </div>
           </div>
@@ -135,10 +135,10 @@ const Detail = () => {
               data-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                className="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="sr-only">Previous</span>
+              <span className="sr-only">Previous</span>
             </div>
           </Link>
 
@@ -156,7 +156,7 @@ const Detail = () => {
             </div>
           </Link>
         </div>
-        <h3 class="about-text">
+        <h3 className="about-text">
           1356 Broadway stands as a building unlike any other, steeped in
           multiple layers of history. As a protected landmark, AAPC embraced the
           responsibility of restoring its interior, meticulously ensuring
@@ -203,9 +203,9 @@ const Detail = () => {
 
         <h2 style={{ margin: "5%" }}>Other Projects</h2>
 
-        <div class="other-projects">
+        <div className="other-projects">
           <div
-            class="other-project-single"
+            className="other-project-single"
             style={{
               background: "url('../project/content/525 7th ave/1.jpg')",
               backgroundSize: "cover",
@@ -216,7 +216,7 @@ const Detail = () => {
             onclick="location.assign('113_Franklin.html')"
           >
             <h3>113 Franklin</h3>
-            <button class="button project-button">
+            <button className="button project-button">
               <h1
                 style={{
                   rotate: "-45deg",
@@ -227,7 +227,7 @@ const Detail = () => {
             </button>
           </div>
           <div
-            class="other-project-single"
+            className="other-project-single"
             style={{
               background:
                 "url('../project/content/44-28 55th ave/Render Edited.jpg')",
@@ -239,7 +239,7 @@ const Detail = () => {
             onclick="location.assign('4428_55th_Ave.html')"
           >
             <h3>44-28 55th Ave</h3>
-            <button class="button project-button">
+            <button className="button project-button">
               <h1
                 style={{
                   rotate: "-45deg",
@@ -250,7 +250,7 @@ const Detail = () => {
             </button>
           </div>
           <div
-            class="other-project-single"
+            className="other-project-single"
             style={{
               background: "url('../project/content/525 7th ave/1.jpg')",
               backgroundSize: "cover",
@@ -261,7 +261,7 @@ const Detail = () => {
             onclick="location.assign('525_7th_Ave.html')"
           >
             <h3>525 7th Ave</h3>
-            <button class="button project-button">
+            <button className="button project-button">
               <h1
                 style={{
                   rotate: "-45deg",

@@ -17,10 +17,10 @@ const Topper = () => {
         data-tilt-glare
         data-tilt-max-glare="0.1"
       ></div>
-      <div class="container" style={{ position: "relative" }}>
-        <div class="carousel-container row">
+      <div className="container" style={{ position: "relative" }}>
+        <div className="carousel-container row">
           <h1
-            class="project-title"
+            className="project-title"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"
@@ -28,12 +28,12 @@ const Topper = () => {
             Gotham Hall [1356 Broadway]
           </h1>
 
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-slide-number="0">
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active" data-slide-number="0">
                 <img
                   src="/project/content/gotham/1.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/1.JPEG"
                   data-type="image"
@@ -41,10 +41,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="1">
+              <div className="carousel-item" data-slide-number="1">
                 <img
                   src="./project/content/gotham/2.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/2.JPEG"
                   data-type="image"
@@ -52,10 +52,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="2">
+              <div className="carousel-item" data-slide-number="2">
                 <img
                   src="/project/content/gotham/3.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/3.JPEG"
                   data-type="image"
@@ -63,10 +63,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="3">
+              <div className="carousel-item" data-slide-number="3">
                 <img
                   src="/project/content/gotham/4.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/4.JPEG"
                   data-type="image"
@@ -74,10 +74,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="4">
+              <div className="carousel-item" data-slide-number="4">
                 <img
                   src="/project/content/gotham/5.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/5.JPEG"
                   data-type="image"
@@ -85,10 +85,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="5">
+              <div className="carousel-item" data-slide-number="5">
                 <img
                   src="/project/content/gotham/6.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/6.JPEG"
                   data-type="image"
@@ -96,10 +96,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="6">
+              <div className="carousel-item" data-slide-number="6">
                 <img
                   src="/project/content/gotham/7.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/7.JPEG"
                   data-type="image"
@@ -107,10 +107,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="7">
+              <div className="carousel-item" data-slide-number="7">
                 <img
                   src="/project/content/gotham/8.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/8.JPEG"
                   data-type="image"
@@ -118,10 +118,10 @@ const Topper = () => {
                   data-gallery="example-gallery"
                 />
               </div>
-              <div class="carousel-item" data-slide-number="8">
+              <div className="carousel-item" data-slide-number="8">
                 <img
                   src="/project/content/gotham/9.JPEG"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/9.JPEG"
                   data-type="image"
@@ -133,7 +133,7 @@ const Topper = () => {
           </div>
 
           <div
-            class="stats"
+            className="stats"
             data-tilt
             data-tilt-glare
             data-tilt-max-glare="0.1"

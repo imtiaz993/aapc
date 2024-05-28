@@ -30,20 +30,20 @@ const Topper = () => {
         }}
       ></div>
 
-      <div class="top-wrapper">
+      <div className="top-wrapper">
         <h1
-          class="topper-title"
+          className="topper-title"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.1"
         >
           Projects
         </h1>
-        <div class="title-wrapper">
-          <h3 class="topper-subtitle">What We Do</h3>
+        <div className="title-wrapper">
+          <h3 className="topper-subtitle">What We Do</h3>
         </div>
 
-        <h3 id="planning-top" class="topper-blurb">
+        <h3 id="planning-top" className="topper-blurb">
           AAPC, which stands for Azarkian Architecture P.C., is a dedicated and
           team With a comprehensive approach, they take pride in their work, not
           only focusing on the physical structures but also investing in the

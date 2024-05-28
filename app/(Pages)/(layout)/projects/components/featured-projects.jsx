@@ -41,29 +41,29 @@ const FeaturedProjects = () => {
   }, []);
 
   return (
-    <div class="flex-container" style={{ position: "relative" }}>
-      <div id="side" class="flex-item-left">
-        <h1 class="left-text" id="hotels-title">
+    <div className="flex-container" style={{ position: "relative" }}>
+      <div id="side" className="flex-item-left">
+        <h1 className="left-text" id="hotels-title">
           Featured Projects
         </h1>
       </div>
-      <div class="flex-item-right" style={{ position: "relative" }}>
+      <div className="flex-item-right" style={{ position: "relative" }}>
         <div id="hotels">
           <div
-            class="flex-container width-full"
+            className="flex-container width-full"
             onclick="nav1412OF()"
             style={{ display: "none" }}
           >
-            <div class="project-left">
+            <div className="project-left">
               <div
-                class="project-left-pic"
+                className="project-left-pic"
                 data-tilt
                 data-tilt-glare
                 data-tilt-max-glare="0.1"
               ></div>
             </div>
-            <div class="project-right">
-              <div class="project-right-content">
+            <div className="project-right">
+              <div className="project-right-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   1412 Offices Floors
                 </h1>
@@ -78,12 +78,12 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full reverse"
+            className="flex-container width-full reverse"
             onclick="location.assign('/project/Gotham_Hall');"
             style={{ marginTop: "5%" }}
           >
-            <div class="project-left">
-              <div class="project-left-content">
+            <div className="project-left">
+              <div className="project-left-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   Gotham Hall
                 </h1>
@@ -98,9 +98,9 @@ const FeaturedProjects = () => {
                 </h4>
               </div>
             </div>
-            <div class="project-right">
+            <div className="project-right">
               <div
-                class="project-right-pic"
+                className="project-right-pic"
                 style={{
                   background: "url('/project/content/gotham/1.JPEG')",
                   backgroundSize: "cover",
@@ -112,12 +112,12 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full"
+            className="flex-container width-full"
             onclick="location.assign('/project/4428_55th_Ave');"
           >
-            <div class="project-left">
+            <div className="project-left">
               <div
-                class="project-left-pic"
+                className="project-left-pic"
                 style={{
                   background:
                     "url('/project/content/44-28 55th ave/Render Edited.jpg')",
@@ -128,8 +128,8 @@ const FeaturedProjects = () => {
                 data-tilt-max-glare="0.1"
               ></div>
             </div>
-            <div class="project-right">
-              <div class="project-right-content">
+            <div className="project-right">
+              <div className="project-right-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   44-28 55th Ave
                 </h1>
@@ -145,11 +145,11 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full reverse"
+            className="flex-container width-full reverse"
             onclick="location.assign('/project/480_7th_Ave');"
           >
-            <div class="project-left">
-              <div class="project-left-content">
+            <div className="project-left">
+              <div className="project-left-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   480 7th Ave
                 </h1>
@@ -163,9 +163,9 @@ const FeaturedProjects = () => {
                 </h4>
               </div>
             </div>
-            <div class="project-right">
+            <div className="project-right">
               <div
-                class="project-right-pic"
+                className="project-right-pic"
                 style={{
                   background: "url('/project/content/480 7th ave/2.jpg')",
                   backgroundSize: "cover",
@@ -177,12 +177,12 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full"
+            className="flex-container width-full"
             onclick="location.assign('/project/525_7th_Ave');"
           >
-            <div class="project-left">
+            <div className="project-left">
               <div
-                class="project-left-pic"
+                className="project-left-pic"
                 style={{
                   background: "url('/project/content/525 7th ave/2.jpg')",
                   backgroundSize: "cover",
@@ -192,8 +192,8 @@ const FeaturedProjects = () => {
                 data-tilt-max-glare="0.1"
               ></div>
             </div>
-            <div class="project-right">
-              <div class="project-right-content">
+            <div className="project-right">
+              <div className="project-right-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   525 7th Ave
                 </h1>
@@ -209,12 +209,12 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full reverse"
+            className="flex-container width-full reverse"
             onclick="location.assign('/project/712_W_125th');"
             style={{ display: "none" }}
           >
-            <div class="project-left">
-              <div class="project-left-content">
+            <div className="project-left">
+              <div className="project-left-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   712 w 125th
                 </h1>
@@ -228,9 +228,9 @@ const FeaturedProjects = () => {
                 </h4>
               </div>
             </div>
-            <div class="project-right">
+            <div className="project-right">
               <div
-                class="project-right-pic"
+                className="project-right-pic"
                 style={{
                   background: "url('/project/content/712w125/4.JPG')",
                   backgroundSize: "cover",
@@ -242,12 +242,12 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full reverse"
+            className="flex-container width-full reverse"
             onclick="location.assign('/project/113_Franklin');"
             style={{ marginBottom: "0" }}
           >
-            <div class="project-left">
-              <div class="project-left-content">
+            <div className="project-left">
+              <div className="project-left-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   113 Franklin
                 </h1>
@@ -262,9 +262,9 @@ const FeaturedProjects = () => {
                 </h4>
               </div>
             </div>
-            <div class="project-right">
+            <div className="project-right">
               <div
-                class="project-right-pic"
+                className="project-right-pic"
                 style={{
                   background:
                     "url('/project/content/113 Franklin/IMG_6182.jpeg')",
@@ -277,13 +277,13 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            class="flex-container width-full"
+            className="flex-container width-full"
             onclick="location.assign('/project/113_Franklin');"
             style={{ display: "none" }}
           >
-            <div class="project-left">
+            <div className="project-left">
               <div
-                class="project-left-pic"
+                className="project-left-pic"
                 style={{
                   background:
                     "url('/project/content/113 Franklin/IMG_6182.jpeg')",
@@ -294,8 +294,8 @@ const FeaturedProjects = () => {
                 data-tilt-max-glare="0.1"
               ></div>
             </div>
-            <div class="project-right">
-              <div class="project-right-content">
+            <div className="project-right">
+              <div className="project-right-content">
                 <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                   113 Franklin
                 </h1>

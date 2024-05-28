@@ -41,13 +41,13 @@ const Contact = () => {
   }, []);
 
   return (
-    <div class="flex-container" style={{ position: "relative" }}>
-      <div id="contact-left" class="flex-item-left">
-        <h1 id="contact-left-text" class="left-text">
+    <div className="flex-container" style={{ position: "relative" }}>
+      <div id="contact-left" className="flex-item-left">
+        <h1 id="contact-left-text" className="left-text">
           Contact
         </h1>
       </div>
-      <div class="flex-item-right" style={{ position: "relative" }}>
+      <div className="flex-item-right" style={{ position: "relative" }}>
         <h1 id="contact-us-text" style={{ margin: "3vmax" }}>
           For more information, business opportunities or any enquiries; reach
           out below
@@ -92,8 +92,8 @@ const Contact = () => {
             id="message"
             required
           ></textarea>
-          <button type="submit" class="button">
-            <h1 class="button-text">Send</h1>
+          <button type="submit" className="button">
+            <h1 className="button-text">Send</h1>
           </button>
         </form>
       </div>
