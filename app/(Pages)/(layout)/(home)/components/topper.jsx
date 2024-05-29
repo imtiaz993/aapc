@@ -1,18 +1,27 @@
+"use client";
+import Tilt from "react-parallax-tilt";
+
 const Topper = () => {
   return (
     <div className="home-topper">
-      <div
+      <Tilt
         className="box-1"
-        data-tilt
-        data-tilt-glare
-        data-tilt-max-glare="0.1"
-      ></div>
-      <div
+        glareEnable={true}
+        glareMaxOpacity={0.1}
+        gyroscope={true}
+        transitionSpeed={300}
+        tiltMaxAngleX={2}
+        tiltMaxAngleY={2}
+      ></Tilt>
+      <Tilt
         className="box-2"
-        data-tilt
-        data-tilt-glare
-        data-tilt-max-glare="0.1"
-      ></div>
+        glareEnable={true}
+        glareMaxOpacity={0.1}
+        gyroscope={true}
+        transitionSpeed={300}
+        tiltMaxAngleX={2}
+        tiltMaxAngleY={2}
+      ></Tilt>
       <h1 className="topper-text">Efficiency From</h1>
       <h1 className="topper-text-2">the Inside Out</h1>
     </div>
