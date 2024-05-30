@@ -49,7 +49,7 @@ const Blog = () => {
                 day: "numeric",
                 year: "numeric",
             })
-            return ` <div className="flex-container width-full reverse" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');" style={{marginTop: "5%"}>
+            return ` <div className="flex-container width-full reverse" onclick="location.assign('/blog-single?id=${rfc3986EncodeURIComponent(item.identifier)}');" style={{marginTop: "5%"}>
                 <div className="project-left">
                     <div className="project-left-content">
                         <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">

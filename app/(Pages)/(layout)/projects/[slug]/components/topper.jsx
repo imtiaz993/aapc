@@ -1,4 +1,14 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import { projects } from "../data";
+
 const Topper = () => {
+  const pathname = usePathname();
+  const project = projects.find(
+    (project) => project.slug === pathname.split("/")[2]
+  );
+
   return (
     <div>
       {" "}
@@ -25,7 +35,7 @@ const Topper = () => {
             data-tilt-glare
             data-tilt-max-glare="0.1"
           >
-            Gotham Hall [1356 Broadway]
+            {project.name}
           </h1>
 
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -43,7 +53,7 @@ const Topper = () => {
               </div>
               <div className="carousel-item" data-slide-number="1">
                 <img
-                  src="./project/content/gotham/2.JPEG"
+                  src="/project/content/gotham/2.JPEG"
                   className="d-block w-100"
                   alt="..."
                   data-remote="./content/gotham/2.JPEG"
@@ -139,16 +149,16 @@ const Topper = () => {
             data-tilt-max-glare="0.1"
           >
             <h3>
-              Company <br /> Ram Caterers
+              Company <br /> {project.company}
             </h3>
             <h3>
-              Location <br /> Midtown
+              Location <br /> {project.location}
             </h3>
             <h3>
-              Typology <br /> Hospitality
+              Typology <br /> {project.typology}
             </h3>
             <h3 style={{ borderRight: "none" }}>
-              Year <br /> 1924
+              Year <br /> {project.year}
             </h3>
           </div>
         </div>{" "}

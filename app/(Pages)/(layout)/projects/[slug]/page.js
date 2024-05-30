@@ -8,23 +8,13 @@ export const metadata = {
   description: "",
 };
 
-const projectDetail = () => {
+const ProjectDetail = () => {
   return (
     <div>
       <Topper />
       <Detail />
-
-      {/* <script>
-    function navTest() {
-        location.assign('project-details-template.html');
-    }
-</script>
-
-
-
-*/}
     </div>
   );
 };
 
-export default projectDetail;
+export default ProjectDetail;

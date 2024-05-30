@@ -1,8 +1,11 @@
 "use client";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import $ from "jquery";
 
 const FeaturedProjects = () => {
+  const router = useRouter();
+
   useEffect(() => {
     const handleScroll = () => {
       var wrapper = $("#side");
@@ -51,7 +54,6 @@ const FeaturedProjects = () => {
         <div id="hotels">
           <div
             className="flex-container width-full"
-            onclick="nav1412OF()"
             style={{ display: "none" }}
           >
             <div className="project-left">
@@ -79,7 +81,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full reverse"
-            onclick="location.assign('/project/Gotham_Hall');"
+            onClick={() => {
+              router.push("/projects/Gotham_Hall");
+            }}
             style={{ marginTop: "5%" }}
           >
             <div className="project-left">
@@ -113,7 +117,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full"
-            onclick="location.assign('/project/4428_55th_Ave');"
+            onClick={() => {
+              router.push("/projects/Gotham_Hall");
+            }}
           >
             <div className="project-left">
               <div
@@ -146,7 +152,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full reverse"
-            onclick="location.assign('/project/480_7th_Ave');"
+            onClick={() => {
+              router.push("/projects/480_7th_Ave");
+            }}
           >
             <div className="project-left">
               <div className="project-left-content">
@@ -178,7 +186,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full"
-            onclick="location.assign('/project/525_7th_Ave');"
+            onClick={() => {
+              router.push("/projects/525_7th_Ave");
+            }}
           >
             <div className="project-left">
               <div
@@ -210,7 +220,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full reverse"
-            onclick="location.assign('/project/712_W_125th');"
+            onClick={() => {
+              router.push("/projects/712_W_125th");
+            }}
             style={{ display: "none" }}
           >
             <div className="project-left">
@@ -243,7 +255,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full reverse"
-            onclick="location.assign('/project/113_Franklin');"
+            onClick={() => {
+              router.push("/projects/113_Franklin");
+            }}
             style={{ marginBottom: "0" }}
           >
             <div className="project-left">
@@ -278,7 +292,9 @@ const FeaturedProjects = () => {
           </div>
           <div
             className="flex-container width-full"
-            onclick="location.assign('/project/113_Franklin');"
+            onClick={() => {
+              router.push("/projects/113_Franklin");
+            }}
             style={{ display: "none" }}
           >
             <div className="project-left">
