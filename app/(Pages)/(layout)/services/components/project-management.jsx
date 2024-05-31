@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import ServicesWrapper from "./ServicesWrapper";
+import Tilt from "react-parallax-tilt";
 
 const ProjectManagement = () => {
   useEffect(() => {
@@ -58,11 +59,14 @@ const ProjectManagement = () => {
           }}
         >
           <div className="section-left-projects">
-            <div
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -92,12 +96,15 @@ const ProjectManagement = () => {
                 Record to regulatory authorities, ensuring compliance with
                 building regulations.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -127,12 +134,15 @@ const ProjectManagement = () => {
                 from authorities for renovations in designated landmarked
                 structures.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -161,14 +171,18 @@ const ProjectManagement = () => {
                 Oversight and management of the construction phase to ensure
                 adherence to design specifications.
               </h3>
-            </div>
+            </Tilt>
           </div>
+
           <div className="section-right-projects">
-            <div
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -197,12 +211,15 @@ const ProjectManagement = () => {
                 Services involving the restoration of existing structures and
                 completion of vacant spaces within a building.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -231,7 +248,7 @@ const ProjectManagement = () => {
                 Facilitation of the contractor proposal submission process for
                 construction or renovation projects.
               </h3>
-            </div>
+            </Tilt>
           </div>
         </div>
       </div>

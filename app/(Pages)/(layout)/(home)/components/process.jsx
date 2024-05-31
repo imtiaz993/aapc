@@ -1,3 +1,6 @@
+"use client";
+import Tilt from "react-parallax-tilt";
+
 const Process = () => {
   return (
     <div
@@ -8,14 +11,17 @@ const Process = () => {
     >
       <div className="flex-item-left" id=""></div>
       <div className="flex-item-right">
-        <div
+        <Tilt
           className="glass-section-header"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.1"
+          glareEnable={true}
+          glareMaxOpacity={0.1}
+          gyroscope={true}
+          transitionSpeed={300}
+          tiltMaxAngleX={2}
+          tiltMaxAngleY={2}
         >
           <h1 className="g-s-h-text">Our Process</h1>
-        </div>
+        </Tilt>
         <div id="stepContainer">
           <img
             loading="lazy"
@@ -24,11 +30,14 @@ const Process = () => {
             src="/project/content/113 Franklin/IMG_6183.jpeg"
             alt="building"
           />
-          <div
+          <Tilt
             className="glass-section-content"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.1"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
           >
             <h1 id="stepTitle" className="g-s-c-text-top">
               Feasibility
@@ -50,7 +59,7 @@ const Process = () => {
             </div>
             <button id="stepButton">Next</button>
             <button id="stepButton2">Previous</button>
-          </div>
+          </Tilt>
         </div>
       </div>
     </div>

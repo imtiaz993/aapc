@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { projects } from "../data";
+import Tilt from "react-parallax-tilt";
 
 const Topper = () => {
   const pathname = usePathname();
@@ -12,7 +13,13 @@ const Topper = () => {
   return (
     <div>
       {" "}
-      <div
+      <Tilt
+        glareEnable={true}
+        glareMaxOpacity={0.1}
+        gyroscope={true}
+        transitionSpeed={300}
+        tiltMaxAngleX={2}
+        tiltMaxAngleY={2}
         style={{
           position: "absolute",
           width: "45vmax",
@@ -23,10 +30,7 @@ const Topper = () => {
           backdropFilter: "blur(12px)",
           marginLeft: "10%",
         }}
-        data-tilt
-        data-tilt-glare
-        data-tilt-max-glare="0.1"
-      ></div>
+      ></Tilt>
       <div className="container" style={{ position: "relative" }}>
         <div className="carousel-container row">
           <h1
@@ -142,11 +146,14 @@ const Topper = () => {
             </div>
           </div>
 
-          <div
+          <Tilt
             className="stats"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.1"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
           >
             <h3>
               Company <br /> {project.company}
@@ -160,7 +167,7 @@ const Topper = () => {
             <h3 style={{ borderRight: "none" }}>
               Year <br /> {project.year}
             </h3>
-          </div>
+          </Tilt>
         </div>{" "}
         {/* /row */}
       </div>

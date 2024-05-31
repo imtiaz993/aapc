@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import ServicesWrapper from "./ServicesWrapper";
+import Tilt from "react-parallax-tilt";
 
 const Visualization = () => {
   useEffect(() => {
@@ -57,11 +58,14 @@ const Visualization = () => {
           }}
         >
           <div className="section-left-projects">
-            <div
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -90,12 +94,15 @@ const Visualization = () => {
                 Documentation of the actual construction post-completion for
                 future reference.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -124,12 +131,15 @@ const Visualization = () => {
                 Integration and coordination of structural elements within the
                 architectural design.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -158,12 +168,15 @@ const Visualization = () => {
                 Integration and coordination of mechanical systems (e.g., HVAC)
                 within the overall design.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -192,12 +205,15 @@ const Visualization = () => {
                 Installation and management of temporary structures during
                 construction.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -226,12 +242,15 @@ const Visualization = () => {
                 Comprehensive set of drawings and specifications guiding
                 construction or renovation.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -260,12 +279,15 @@ const Visualization = () => {
                 Planning and coordination of sprinkler and standpipe systems for
                 fire protection.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -294,13 +316,16 @@ const Visualization = () => {
                 Planning and coordination of acoustical elements within the
                 building design.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
               style={{ marginBottom: "10%" }}
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -329,13 +354,16 @@ const Visualization = () => {
                 Ensuring design and construction comply with the Americans with
                 Disabilities Act standards.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
               style={{ marginBottom: "10%" }}
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -364,14 +392,17 @@ const Visualization = () => {
                 Planning and coordination of vertical transportation systems
                 within the building.
               </h3>
-            </div>
+            </Tilt>
           </div>
           <div className="section-right-projects">
-            <div
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -400,12 +431,15 @@ const Visualization = () => {
                 Comprehensive set of documents provided to potential bidders
                 containing project specifications.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -434,12 +468,15 @@ const Visualization = () => {
                 Planning and coordination of plumbing systems within the
                 building design.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -468,12 +505,15 @@ const Visualization = () => {
                 Planning and coordination of Ansul fire suppression systems
                 within the building design.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -502,12 +542,15 @@ const Visualization = () => {
                 Submission of applications to the fire department for necessary
                 approvals and permits.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -536,12 +579,15 @@ const Visualization = () => {
                 Submission of drawings to the Department of Buildings for permit
                 approval.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -570,12 +616,15 @@ const Visualization = () => {
                 Planning and coordination of fire alarm systems for early
                 detection.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -604,13 +653,16 @@ const Visualization = () => {
                 Submission of documentation for approval of the building&apos;s
                 intended use and occupancy.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
               style={{ marginBottom: "10%" }}
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -639,7 +691,7 @@ const Visualization = () => {
                 Planning and coordination of refrigeration systems and
                 insulation.
               </h3>
-            </div>
+            </Tilt>
           </div>
         </div>
       </div>

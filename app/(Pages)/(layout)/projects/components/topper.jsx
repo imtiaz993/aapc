@@ -1,7 +1,16 @@
+"use client";
+import Tilt from "react-parallax-tilt";
+
 const Topper = () => {
   return (
     <div style={{ position: "relative", height: "90vh" }}>
-      <div
+      <Tilt
+        glareEnable={true}
+        glareMaxOpacity={0.1}
+        gyroscope={true}
+        transitionSpeed={300}
+        tiltMaxAngleX={2}
+        tiltMaxAngleY={2}
         style={{
           position: "absolute",
           width: "45vmax",
@@ -12,10 +21,7 @@ const Topper = () => {
           backdropFilter: "blur(12px)",
           marginLeft: "10%",
         }}
-        data-tilt
-        data-tilt-glare
-        data-tilt-max-glare="0.1"
-      ></div>
+      ></Tilt>
 
       <div
         style={{

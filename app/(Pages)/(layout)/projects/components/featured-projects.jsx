@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import $ from "jquery";
+import Tilt from "react-parallax-tilt";
 
 const FeaturedProjects = () => {
   const router = useRouter();
@@ -57,12 +58,15 @@ const FeaturedProjects = () => {
             style={{ display: "none" }}
           >
             <div className="project-left">
-              <div
+              <Tilt
                 className="project-left-pic"
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
             <div className="project-right">
               <div className="project-right-content">
@@ -103,36 +107,42 @@ const FeaturedProjects = () => {
               </div>
             </div>
             <div className="project-right">
-              <div
+              <Tilt
                 className="project-right-pic"
                 style={{
                   background: "url('/project/content/gotham/1.JPEG')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
           </div>
           <div
             className="flex-container width-full"
             onClick={() => {
-              router.push("/projects/Gotham_Hall");
+              router.push("/projects/4428_55th_Ave");
             }}
           >
             <div className="project-left">
-              <div
+              <Tilt
                 className="project-left-pic"
                 style={{
                   background:
                     "url('/project/content/44-28 55th ave/Render Edited.jpg')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
             <div className="project-right">
               <div className="project-right-content">
@@ -172,16 +182,19 @@ const FeaturedProjects = () => {
               </div>
             </div>
             <div className="project-right">
-              <div
+              <Tilt
                 className="project-right-pic"
                 style={{
                   background: "url('/project/content/480 7th ave/2.jpg')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
           </div>
           <div
@@ -191,16 +204,19 @@ const FeaturedProjects = () => {
             }}
           >
             <div className="project-left">
-              <div
+              <Tilt
                 className="project-left-pic"
                 style={{
                   background: "url('/project/content/525 7th ave/2.jpg')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
             <div className="project-right">
               <div className="project-right-content">
@@ -241,16 +257,19 @@ const FeaturedProjects = () => {
               </div>
             </div>
             <div className="project-right">
-              <div
+              <Tilt
                 className="project-right-pic"
                 style={{
                   background: "url('/project/content/712w125/4.JPG')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
           </div>
           <div
@@ -277,17 +296,20 @@ const FeaturedProjects = () => {
               </div>
             </div>
             <div className="project-right">
-              <div
+              <Tilt
                 className="project-right-pic"
                 style={{
                   background:
                     "url('/project/content/113 Franklin/IMG_6182.jpeg')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
           </div>
           <div
@@ -298,17 +320,20 @@ const FeaturedProjects = () => {
             style={{ display: "none" }}
           >
             <div className="project-left">
-              <div
+              <Tilt
                 className="project-left-pic"
                 style={{
                   background:
                     "url('/project/content/113 Franklin/IMG_6182.jpeg')",
                   backgroundSize: "cover",
                 }}
-                data-tilt
-                data-tilt-glare
-                data-tilt-max-glare="0.1"
-              ></div>
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              ></Tilt>
             </div>
             <div className="project-right">
               <div className="project-right-content">

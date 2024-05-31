@@ -85,29 +85,35 @@ const Detail = () => {
             </div>
           </Link>
         </div>
-        <h3 className="about-text">{project.about}</h3>
+        {project?.about && <h3 className="about-text">{project.about}</h3>}
 
-        <video style={{ width: "80%", padding: "5% 0" }} controls>
-          <source src={project.aboutVideo} type="video/mp4" />
-          <source src="movie.ogg" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
-        <h3 className="about-text" style={{ textAlign: "right" }}>
-          {project.about2}
-        </h3>
-        <video
-          style={{
-            position: "relative",
-            width: "100%",
-            padding: "5% 0 0",
-            paddingLeft: "20%",
-          }}
-          controls
-        >
-          <source src={project.about2Video} type="video/mp4" />
-          <source src="movie.ogg" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
+        {project?.aboutVideo && (
+          <video style={{ width: "80%", padding: "5% 0" }} controls>
+            <source src={project.aboutVideo} type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        )}
+        {project?.about2 && (
+          <h3 className="about-text" style={{ textAlign: "right" }}>
+            {project.about2}
+          </h3>
+        )}
+        {project?.about2Video && (
+          <video
+            style={{
+              position: "relative",
+              width: "100%",
+              padding: "5% 0 0",
+              paddingLeft: "20%",
+            }}
+            controls
+          >
+            <source src={project.about2Video} type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        )}
 
         <h2 style={{ margin: "5%" }}>Other Projects</h2>
 

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import ServicesWrapper from "./ServicesWrapper";
+import Tilt from "react-parallax-tilt";
 
 const Planning = () => {
   useEffect(() => {
@@ -57,11 +58,14 @@ const Planning = () => {
           }}
         >
           <div className="section-left-projects">
-            <div
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -89,12 +93,15 @@ const Planning = () => {
               >
                 Assessment and documentation of existing site conditions.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -122,12 +129,15 @@ const Planning = () => {
               >
                 Examination of zoning regulations to assess project feasibility
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box left-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -155,14 +165,17 @@ const Planning = () => {
               >
                 Evaluation of project viability and potential challenges.
               </h3>
-            </div>
+            </Tilt>
           </div>
           <div className="section-right-projects">
-            <div
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -190,12 +203,15 @@ const Planning = () => {
               >
                 Review and analysis of building codes to ensure compliance.
               </h3>
-            </div>
-            <div
+            </Tilt>
+            <Tilt
               className="vendor-box right-service"
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
+              glareEnable={true}
+              glareMaxOpacity={0.1}
+              gyroscope={true}
+              transitionSpeed={300}
+              tiltMaxAngleX={2}
+              tiltMaxAngleY={2}
             >
               <div className="gold-bg"></div>
               <img
@@ -224,7 +240,7 @@ const Planning = () => {
                 Design and arrangement of spaces within a building based on
                 functional requirements and user needs.
               </h3>
-            </div>
+            </Tilt>
           </div>
         </div>
       </div>
