@@ -1,3 +1,7 @@
+"use client";
+
+import Tilt from "react-parallax-tilt";
+
 const Topper = () => {
   return (
     <div style={{ position: "relative", height: "90vh" }}>
