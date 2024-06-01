@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: "Century Gothic", sans-serif;
     color: white;
+    margin: 0px;
 }
 
 body {
@@ -69,7 +70,7 @@ html{
     color: #eee;
     letter-spacing: 2px;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px !important;
     margin: 0 18px;
 }
 

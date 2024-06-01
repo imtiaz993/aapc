@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import Topper from "./components/topper";
@@ -12,12 +13,20 @@ export const metadata = {
 
 const ProjectDetail = () => {
   return (
-    <div>
-      <Navbar />
-      <Topper />
-      <Detail />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+        />
+      </Head>
+      <div>
+        <Navbar />
+        <Topper />
+        <Detail />
+        <Footer />
+      </div>
+    </>
   );
 };
 

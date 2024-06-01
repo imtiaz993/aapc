@@ -51,10 +51,6 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-        />
-        <link
-          rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         />
       </head>
