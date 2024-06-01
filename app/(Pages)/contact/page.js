@@ -3,7 +3,7 @@ import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import ContactSection from "./components/contact";
 import Join from "./components/join";
-import "../../../../public/css/contact.css";
+import "../../../public/css/contact.css";
 
 export const metadata = {
   title: "AAPC | Blog Contact",

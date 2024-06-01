@@ -1,7 +1,7 @@
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
-import "../../../../public/css/home.css";
-import "../../../../public/css/blog-details.css";
+import "../../../public/css/home.css";
+import "../../../public/css/blog-details.css";
 
 export const metadata = {
   title: "AAPC | Blog Single",

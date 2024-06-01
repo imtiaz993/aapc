@@ -4,8 +4,8 @@ import Topper from "./components/topper";
 import Process from "./components/process";
 import About from "./components/about";
 import Team from "./components/team";
-import "../../../../public/css/home.css";
-import "../../../../public/css/home-services.css";
+import "../../../public/css/home.css";
+import "../../../public/css/home-services.css";
 
 export const metadata = {
   title: "AAPC | Home",

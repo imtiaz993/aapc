@@ -2,8 +2,8 @@ import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import FeaturedProjects from "./components/featured-projects";
-import "../../../../public/css/home.css";
-import "../../../../public/css/projects.css";
+import "../../../public/css/home.css";
+import "../../../public/css/projects.css";
 
 export const metadata = {
   title: "AAPC | Projects",
