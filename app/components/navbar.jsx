@@ -1,6 +1,9 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
@@ -21,12 +24,21 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="/">
+              <Link
+                className={`nav-link ${pathname === "/" ? "active" : ""}`}
+                aria-current="page"
+                href="/"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/services">
+              <Link
+                className={`nav-link ${
+                  pathname.includes("/services") ? "active" : ""
+                }`}
+                href="/services"
+              >
                 Services
               </Link>
             </li>
@@ -34,12 +46,22 @@ const Navbar = () => {
               <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
             </Link>
             <li className="nav-item">
-              <Link className="nav-link" href="/projects">
+              <Link
+                className={`nav-link ${
+                  pathname.includes("/projects") ? "active" : ""
+                }`}
+                href="/projects"
+              >
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/contact">
+              <Link
+                className={`nav-link ${
+                  pathname.includes("/contact") ? "active" : ""
+                }`}
+                href="/contact"
+              >
                 Contact
               </Link>
             </li>

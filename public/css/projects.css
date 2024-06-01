@@ -63,7 +63,7 @@
     text-align: right;
 }
 
-.project-right-content h1 {
+.project-right-content h1,.project-right-content-tilt {
     background: linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%);
     padding: 3%;
     display: inline-block;

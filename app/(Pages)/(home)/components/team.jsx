@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import $ from "jquery";
+import Tilt from "react-parallax-tilt";
 
 const Team = () => {
   useEffect(() => {
@@ -56,19 +57,28 @@ const Team = () => {
           >
             <div className="container">
               <div className="card-stack">
-                <ul className="ul-card card-list">
-                  <li
+                <div className="ul-card card-list">
+                  <Tilt
+                    glareEnable={true}
+                    glareMaxOpacity={0.1}
+                    gyroscope={true}
+                    transitionSpeed={300}
+                    tiltMaxAngleX={2}
+                    tiltMaxAngleY={2}
                     className="li-card card"
                     style={{
                       background: "url('/img/pierre.png')",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
-                    data-tilt
-                    data-tilt-glare
-                    data-tilt-max-glare="0.1"
-                  ></li>
-                  <li
+                  />
+                  <Tilt
+                    glareEnable={true}
+                    glareMaxOpacity={0.1}
+                    gyroscope={true}
+                    transitionSpeed={300}
+                    tiltMaxAngleX={2}
+                    tiltMaxAngleY={2}
                     className="li-card card"
                     id="firstcard"
                     style={{
@@ -76,11 +86,8 @@ const Team = () => {
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
-                    data-tilt
-                    data-tilt-glare
-                    data-tilt-max-glare="0.1"
-                  ></li>
-                </ul>
+                  />
+                </div>
                 <a className="buttons button next" onclick="toggleContent()">
                   <h1 className="bio-button">Next</h1>
                 </a>

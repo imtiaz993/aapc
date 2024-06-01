@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import FeaturedProjects from "./components/featured-projects";
 import "../../../../public/css/home.css";
@@ -13,8 +15,10 @@ export const metadata = {
 const Projects = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <FeaturedProjects />
+      <Footer />
     </div>
   );
 };

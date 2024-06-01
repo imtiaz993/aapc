@@ -29,7 +29,7 @@ const Topper = () => {
           position: "absolute",
           width: "45%",
           height: "60vh",
-          background: "url('img/contact-top.png')",
+          background: "url('/img/contact-top.png')",
           left: "15%",
           top: "15vh",
           boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
@@ -38,14 +38,17 @@ const Topper = () => {
       ></div>
 
       <div className="top-wrapper">
-        <h1
+        <Tilt
+          glareEnable={true}
+          glareMaxOpacity={0.1}
+          gyroscope={true}
+          transitionSpeed={300}
+          tiltMaxAngleX={2}
+          tiltMaxAngleY={2}
           className="topper-title"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.1"
         >
           Contact Us
-        </h1>
+        </Tilt>
         <div className="title-wrapper">
           <h3 className="topper-subtitle">Get in Touch</h3>
         </div>

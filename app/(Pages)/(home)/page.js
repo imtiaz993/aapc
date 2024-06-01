@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import Process from "./components/process";
 import About from "./components/about";
@@ -15,10 +17,12 @@ export const metadata = {
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <Process />
       <About />
       <Team />
+      <Footer />
     </div>
   );
 };

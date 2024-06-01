@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import Detail from "./components/detail";
 import "../../../../../public/css/home.css";
@@ -11,8 +13,10 @@ export const metadata = {
 const ProjectDetail = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <Detail />
+      <Footer />
     </div>
   );
 };

@@ -70,9 +70,16 @@ const FeaturedProjects = () => {
             </div>
             <div className="project-right">
               <div className="project-right-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  1412 Offices Floors
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>1412 Offices Floors</h1>
+                </Tilt>
                 <br />
                 <h5>Luxury Showrooms</h5>
                 <h4>
@@ -92,9 +99,16 @@ const FeaturedProjects = () => {
           >
             <div className="project-left">
               <div className="project-left-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  Gotham Hall
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>Gotham Hall</h1>
+                </Tilt>
                 <br />
                 <h5>Hospitality</h5>
                 <h4>
@@ -146,9 +160,16 @@ const FeaturedProjects = () => {
             </div>
             <div className="project-right">
               <div className="project-right-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  44-28 55th Ave
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>44-28 55th Ave</h1>
+                </Tilt>
                 <br />
                 <h5>Industrial</h5>
                 <h4>
@@ -168,9 +189,16 @@ const FeaturedProjects = () => {
           >
             <div className="project-left">
               <div className="project-left-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  480 7th Ave
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>480 7th Ave</h1>
+                </Tilt>
                 <br />
                 <h5>Retail</h5>
                 <h4>
@@ -220,9 +248,16 @@ const FeaturedProjects = () => {
             </div>
             <div className="project-right">
               <div className="project-right-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  525 7th Ave
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>525 7th Ave</h1>
+                </Tilt>
                 <br />
                 <h5>Offices</h5>
                 <h4>
@@ -243,9 +278,16 @@ const FeaturedProjects = () => {
           >
             <div className="project-left">
               <div className="project-left-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  712 w 125th
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>712 w 125th</h1>
+                </Tilt>
                 <br />
                 <h5>Restaurant</h5>
                 <h4>
@@ -281,9 +323,16 @@ const FeaturedProjects = () => {
           >
             <div className="project-left">
               <div className="project-left-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  113 Franklin
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1>113 Franklin</h1>
+                </Tilt>
                 <br />
                 <h5>Restaurant</h5>
                 <h4>
@@ -337,9 +386,16 @@ const FeaturedProjects = () => {
             </div>
             <div className="project-right">
               <div className="project-right-content">
-                <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                  113 Franklin
-                </h1>
+                <Tilt
+                  glareEnable={true}
+                  glareMaxOpacity={0}
+                  gyroscope={true}
+                  transitionSpeed={300}
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                >
+                  <h1> 113 Franklin</h1>
+                </Tilt>
                 <br />
                 <h5>Restaurants</h5>
                 <h4>

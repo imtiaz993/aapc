@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import ContactSection from "./components/contact";
 import Join from "./components/join";
@@ -13,9 +15,11 @@ export const metadata = {
 const Contact = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <ContactSection />
       <Join />
+      <Footer />
     </div>
   );
 };

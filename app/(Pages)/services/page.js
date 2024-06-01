@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import AboutButtons from "./components/about-buttons";
 import Planning from "./components/planning";
@@ -16,11 +18,13 @@ export const metadata = {
 const Services = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <AboutButtons />
       <Planning />
       <Visualization />
       <ProjectManagement />
+      <Footer />
     </div>
   );
 };

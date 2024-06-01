@@ -47,12 +47,12 @@
 .container .card-stack .card-list {
     width: 300px;
 }
-.container .card-stack .card-list li {
+.container .card-stack .card-list .li-card {
+    height: 100%;
     transition: all 100ms ease-in-out;
     border-radius: 2px;
     position: absolute;
     list-style: none;
-    height: 300px;
     -webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, .5);
     left: 0;
     right: 0;

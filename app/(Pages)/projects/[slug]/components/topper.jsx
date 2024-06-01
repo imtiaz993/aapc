@@ -33,14 +33,17 @@ const Topper = () => {
       ></Tilt>
       <div className="container" style={{ position: "relative" }}>
         <div className="carousel-container row">
-          <h1
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
             className="project-title"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.1"
           >
             {project.name}
-          </h1>
+          </Tilt>
 
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">

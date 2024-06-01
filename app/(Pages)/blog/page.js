@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import Topper from "./components/topper";
 import RecentPosts from "./components/recent-posts";
 import "../../../../public/css/home.css";
@@ -13,8 +15,10 @@ export const metadata = {
 const Blog = () => {
   return (
     <div>
+      <Navbar />
       <Topper />
       <RecentPosts />
+      <Footer />
 
       {/* <script>
     const BLOG_URL = 'https://azark-blog-backend.onrender.com/api/posts';
