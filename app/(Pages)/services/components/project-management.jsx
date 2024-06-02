@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import $ from "jquery";
-import ServicesWrapper from "./ServicesWrapper";
 import Tilt from "react-parallax-tilt";
 
 const ProjectManagement = () => {
@@ -43,216 +42,214 @@ const ProjectManagement = () => {
   }, []);
 
   return (
-    <ServicesWrapper>
+    <div
+      className="flex-item-right"
+      id="project-management"
+      style={{ position: "relative" }}
+    >
       <div
-        className="flex-item-right"
-        id="project-management"
-        style={{ position: "relative" }}
+        className="flex-container service-section"
+        style={{
+          borderTop: "none",
+          marginBottom: "0",
+          paddingBottom: "0",
+          width: "100%",
+        }}
       >
-        <div
-          className="flex-container service-section"
-          style={{
-            borderTop: "none",
-            marginBottom: "0",
-            paddingBottom: "0",
-            width: "100%",
-          }}
-        >
-          <div className="section-left-projects">
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+        <div className="section-left-projects">
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <img
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/project-man-pic.png"
+            />
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
-                loading="lazy"
-                alt="service-bg-img"
-                src="/img/project-man-pic.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Architect of Record (AOR) Filing
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Submission of official documents by the designated Architect of
-                Record to regulatory authorities, ensuring compliance with
-                building regulations.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              Architect of Record (AOR) Filing
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
-                loading="lazy"
-                alt="service-bg-img"
-                src="/img/project-man-pic.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Landmark Filing Sets (Interior/Exterior Renovation)
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Creation and submission of documentation for obtaining approval
-                from authorities for renovations in designated landmarked
-                structures.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              Submission of official documents by the designated Architect of
+              Record to regulatory authorities, ensuring compliance with
+              building regulations.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <img
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/project-man-pic.png"
+            />
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
-                loading="lazy"
-                alt="service-bg-img"
-                src="/img/project-man-pic.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Construction Administration
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Oversight and management of the construction phase to ensure
-                adherence to design specifications.
-              </h3>
-            </Tilt>
-          </div>
+              Landmark Filing Sets (Interior/Exterior Renovation)
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Creation and submission of documentation for obtaining approval
+              from authorities for renovations in designated landmarked
+              structures.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <img
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/project-man-pic.png"
+            />
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
+            >
+              Construction Administration
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Oversight and management of the construction phase to ensure
+              adherence to design specifications.
+            </h3>
+          </Tilt>
+        </div>
 
-          <div className="section-right-projects">
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+        <div className="section-right-projects">
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <img
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/project-man-pic.png"
+            />
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
-                loading="lazy"
-                alt="service-bg-img"
-                src="/img/project-man-pic.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Restorations and Fill Outs
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Services involving the restoration of existing structures and
-                completion of vacant spaces within a building.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              Restorations and Fill Outs
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
-                loading="lazy"
-                alt="service-bg-img"
-                src="/img/project-man-pic.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Bidding
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Facilitation of the contractor proposal submission process for
-                construction or renovation projects.
-              </h3>
-            </Tilt>
-          </div>
+              Services involving the restoration of existing structures and
+              completion of vacant spaces within a building.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <img
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/project-man-pic.png"
+            />
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
+            >
+              Bidding
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Facilitation of the contractor proposal submission process for
+              construction or renovation projects.
+            </h3>
+          </Tilt>
         </div>
       </div>
-    </ServicesWrapper>
+    </div>
   );
 };
 

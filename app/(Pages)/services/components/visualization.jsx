@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import $ from "jquery";
-import ServicesWrapper from "./ServicesWrapper";
 import Tilt from "react-parallax-tilt";
 
 const Visualization = () => {
@@ -42,7 +41,6 @@ const Visualization = () => {
     };
   }, []);
   return (
-    <ServicesWrapper>
       <div
         className="flex-item-right"
         id="visualization"
@@ -695,7 +693,6 @@ const Visualization = () => {
           </div>
         </div>
       </div>
-    </ServicesWrapper>
   );
 };
 

@@ -1,10 +1,6 @@
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
-import Topper from "./components/topper";
-import AboutButtons from "./components/about-buttons";
-import Planning from "./components/planning";
-import Visualization from "./components/visualization";
-import ProjectManagement from "./components/project-management";
+import ServicesWrapper from "./components/ServicesWrapper";
 import "../../../public/css/home.css";
 import "../../../public/css/services.css";
 
@@ -19,11 +15,7 @@ const Services = () => {
   return (
     <div>
       <Navbar />
-      <Topper />
-      <AboutButtons />
-      <Planning />
-      <Visualization />
-      <ProjectManagement />
+      <ServicesWrapper />
       <Footer />
     </div>
   );
