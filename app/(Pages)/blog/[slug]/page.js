@@ -1,5 +1,7 @@
+import Head from "next/head";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
+import Topper from "./components/topper";
 import "../../../../public/css/home.css";
 import "../../../../public/css/blog-details.css";
 
@@ -25,68 +27,31 @@ const BlogSingle = async ({ params }) => {
     }
   }
 
-  const formattedCreated = new Date(post.createdAt).toLocaleDateString(
-    "en-US",
-    {
-      month: "long", // Use "short" for abbreviated month
-      day: "numeric",
-      year: "numeric",
-    }
-  );
-
-  const formattedUpdated = new Date(post.updatedAt).toLocaleDateString(
-    "en-US",
-    {
-      month: "long", // Use "short" for abbreviated month
-      day: "numeric",
-      year: "numeric",
-    }
-  );
-
   return (
-    <div>
-      <Navbar />
-      <div className="container" style={{ position: "relative" }}>
-        <div className="carousel-container row">
-          <h1
-            className="project-title"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.1"
-          >
-            {post.title}
-          </h1>
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+        />
+      </Head>
 
-          <div id="myCarousel" className="carousel slide" data-ride="carousel">
-            <img src={post.photo} style={{ width: "100%" }} alt={post.title} />
-          </div>
-
-          <div
-            className="stats"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.1"
-          >
-            <h3>{post.author}</h3>
-            <h3 id="createdDate">Written: {formattedCreated}</h3>
-            {formattedCreated !== formattedUpdated && (
-              <h3 id="updatedDate">Updated: {formattedUpdated}</h3>
-            )}
+      <div>
+        <Navbar />
+        <Topper post={post} />
+        <div className="flex-container" style={{ position: "relative" }}>
+          <div className="flex-item-left"></div>
+          <div className="flex-item-right">
+            <div
+              id="the-text"
+              className="about-text"
+              dangerouslySetInnerHTML={{ __html: post.desc }}
+            ></div>
           </div>
         </div>
+        <Footer />
       </div>
-      <div className="flex-container" style={{ position: "relative" }}>
-        <div className="flex-item-left"></div>
-        <div className="flex-item-right">
-          <div
-            id="the-text"
-            className="about-text"
-            dangerouslySetInnerHTML={{ __html: post.desc }}
-          ></div>
-        </div>
-      </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
