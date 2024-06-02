@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import Tilt from "react-parallax-tilt";
 import { projects } from "../data";
 
 const Detail = () => {
@@ -126,23 +127,29 @@ const Detail = () => {
                 background: `url('${item.image}')`,
                 backgroundSize: "cover",
               }}
-              data-tilt
-              data-tilt-glare
-              data-tilt-max-glare="0.1"
               onClick={() => {
                 router.push(item.slug);
               }}
             >
-              <h3>{item.title}</h3>
-              <button className="button project-button">
-                <h1
-                  style={{
-                    rotate: "-45deg",
-                  }}
-                >
-                  ➛
-                </h1>
-              </button>
+              <Tilt
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                gyroscope={true}
+                transitionSpeed={300}
+                tiltMaxAngleX={2}
+                tiltMaxAngleY={2}
+              >
+                <h3>{item.title}</h3>
+                <button className="button project-button">
+                  <h1
+                    style={{
+                      rotate: "-45deg",
+                    }}
+                  >
+                    ➛
+                  </h1>
+                </button>
+              </Tilt>
             </div>
           ))}
         </div>
