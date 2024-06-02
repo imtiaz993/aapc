@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
 
 const Visualization = () => {
   useEffect(() => {
@@ -41,658 +42,793 @@ const Visualization = () => {
     };
   }, []);
   return (
+    <div
+      className="flex-item-right"
+      id="visualization"
+      style={{ position: "relative" }}
+    >
       <div
-        className="flex-item-right"
-        id="visualization"
-        style={{ position: "relative" }}
+        className="flex-container service-section"
+        style={{
+          borderTop: "none",
+          marginBottom: "0",
+          paddingBottom: "0",
+          width: "100%",
+        }}
       >
-        <div
-          className="flex-container service-section"
-          style={{
-            borderTop: "none",
-            marginBottom: "0",
-            paddingBottom: "0",
-            width: "100%",
-          }}
-        >
-          <div className="section-left-projects">
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
-            >
-              <div className="gold-bg"></div>
-              <img
+        <div className="section-left-projects">
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Existing As-Built Plans
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Documentation of the actual construction post-completion for
-                future reference.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Existing As-Built Plans
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Documentation of the actual construction post-completion for
+              future reference.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Structural Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Integration and coordination of structural elements within the
-                architectural design.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Structural Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Integration and coordination of structural elements within the
+              architectural design.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Mechanical System Coordination{" "}
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Integration and coordination of mechanical systems (e.g., HVAC)
-                within the overall design.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Mechanical System Coordination{" "}
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Integration and coordination of mechanical systems (e.g., HVAC)
+              within the overall design.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Construction Fence, Shed, Scaffold
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Installation and management of temporary structures during
-                construction.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Construction Fence, Shed, Scaffold
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Installation and management of temporary structures during
+              construction.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Construction Documents
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Comprehensive set of drawings and specifications guiding
-                construction or renovation.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Construction Documents
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Comprehensive set of drawings and specifications guiding
+              construction or renovation.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Sprinkler and Standpipe Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of sprinkler and standpipe systems for
-                fire protection.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Sprinkler and Standpipe Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of sprinkler and standpipe systems for
+              fire protection.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Acoustical Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of acoustical elements within the
-                building design.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              style={{ marginBottom: "10%" }}
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Acoustical Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of acoustical elements within the
+              building design.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            style={{ marginBottom: "10%" }}
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                ADA Compliance
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Ensuring design and construction comply with the Americans with
-                Disabilities Act standards.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box left-service"
-              style={{ marginBottom: "10%" }}
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              ADA Compliance
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Ensuring design and construction comply with the Americans with
+              Disabilities Act standards.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box left-service"
+            style={{ marginBottom: "10%" }}
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Vertical Transportation
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of vertical transportation systems
-                within the building.
-              </h3>
-            </Tilt>
-          </div>
-          <div className="section-right-projects">
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Vertical Transportation
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of vertical transportation systems
+              within the building.
+            </h3>
+          </Tilt>
+        </div>
+        <div className="section-right-projects">
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Bidding Documents
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Comprehensive set of documents provided to potential bidders
-                containing project specifications.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Bidding Documents
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Comprehensive set of documents provided to potential bidders
+              containing project specifications.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Plumbing Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of plumbing systems within the
-                building design.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Plumbing Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of plumbing systems within the building
+              design.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Ansul System Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of Ansul fire suppression systems
-                within the building design.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Ansul System Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of Ansul fire suppression systems within
+              the building design.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Fire Department Applications
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Submission of applications to the fire department for necessary
-                approvals and permits.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Fire Department Applications
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Submission of applications to the fire department for necessary
+              approvals and permits.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                DOB Filling / Permit Drawings sets
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Submission of drawings to the Department of Buildings for permit
-                approval.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              DOB Filling / Permit Drawings sets
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Submission of drawings to the Department of Buildings for permit
+              approval.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Fire Alarm System Coordination
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of fire alarm systems for early
-                detection.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Fire Alarm System Coordination
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of fire alarm systems for early
+              detection.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Use and Occupancy Filling Sets
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Submission of documentation for approval of the building&apos;s
-                intended use and occupancy.
-              </h3>
-            </Tilt>
-            <Tilt
-              className="vendor-box right-service"
-              style={{ marginBottom: "10%" }}
-              glareEnable={true}
-              glareMaxOpacity={0.1}
-              gyroscope={true}
-              transitionSpeed={300}
-              tiltMaxAngleX={2}
-              tiltMaxAngleY={2}
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
             >
-              <div className="gold-bg"></div>
-              <img
+              Use and Occupancy Filling Sets
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Submission of documentation for approval of the building&apos;s
+              intended use and occupancy.
+            </h3>
+          </Tilt>
+          <Tilt
+            className="vendor-box right-service"
+            style={{ marginBottom: "10%" }}
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            gyroscope={true}
+            transitionSpeed={300}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+          >
+            <div className="gold-bg"></div>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              loading="lazy"
+              alt="service-bg-img"
+              src="/img/visualization.png"
+            />
+            {/* <img
                 loading="lazy"
                 alt="service-bg-img"
                 src="/img/visualization.png"
-              />
-              <h1
-                style={{
-                  padding: "2vmax 2vmax 1vmax",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-              >
-                Refrigeration and Insulation
-              </h1>
-              <h3
-                style={{
-                  margin: "auto 2vmax",
-                  lineHeight: 2,
-                  position: "relative",
-                  paddingBottom: "2vmax",
-                  zIndex: 2,
-                }}
-              >
-                Planning and coordination of refrigeration systems and
-                insulation.
-              </h3>
-            </Tilt>
-          </div>
+              /> */}
+            <h1
+              style={{
+                padding: "2vmax 2vmax 1vmax",
+                position: "relative",
+                zIndex: 2,
+              }}
+            >
+              Refrigeration and Insulation
+            </h1>
+            <h3
+              style={{
+                margin: "auto 2vmax",
+                lineHeight: 2,
+                position: "relative",
+                paddingBottom: "2vmax",
+                zIndex: 2,
+              }}
+            >
+              Planning and coordination of refrigeration systems and insulation.
+            </h3>
+          </Tilt>
         </div>
       </div>
+    </div>
   );
 };
 

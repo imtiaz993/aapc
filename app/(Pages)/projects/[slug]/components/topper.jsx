@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { projects } from "../data";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
 
 const Topper = () => {
   const pathname = usePathname();
@@ -12,7 +13,6 @@ const Topper = () => {
 
   return (
     <div>
-      {" "}
       <Tilt
         glareEnable={true}
         glareMaxOpacity={0.1}
@@ -29,9 +29,10 @@ const Topper = () => {
           boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
           backdropFilter: "blur(12px)",
           marginLeft: "10%",
+          top: 0,
         }}
       ></Tilt>
-      <div className="container" style={{ position: "relative" }}>
+      <div className="container" style={{ position: "relative", maxWidth: "1140px" }}>
         <div className="carousel-container row">
           <Tilt
             glareEnable={true}
@@ -48,7 +49,20 @@ const Topper = () => {
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active" data-slide-number="0">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/1.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/1.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/1.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -56,10 +70,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="1">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/2.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/2.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/2.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -67,10 +94,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="2">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/3.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/3.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/3.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -78,10 +118,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="3">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/4.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/4.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/4.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -89,10 +142,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="4">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/5.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/5.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/5.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -100,10 +166,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="5">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/6.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/6.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/6.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -111,10 +190,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="6">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/7.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/7.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/7.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -122,10 +214,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="7">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/8.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/8.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/8.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -133,10 +238,23 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
               <div className="carousel-item" data-slide-number="8">
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  src="/project/content/gotham/9.JPEG"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                  data-remote="./content/gotham/9.JPEG"
+                  data-type="image"
+                  data-toggle="lightbox"
+                  data-gallery="example-gallery"
+                />
+                {/* <img
                   src="/project/content/gotham/9.JPEG"
                   className="d-block w-100"
                   alt="..."
@@ -144,7 +262,7 @@ const Topper = () => {
                   data-type="image"
                   data-toggle="lightbox"
                   data-gallery="example-gallery"
-                />
+                /> */}
               </div>
             </div>
           </div>

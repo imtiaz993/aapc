@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -23,13 +24,24 @@ const Footer = () => {
         }}
       >
         <div className="footer-left">
-          <img
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            loading="lazy"
+            src="/img/AAPC_Logo.png"
+            id="footer-img"
+            className="nav-img h-auto"
+            alt="AAPC_Logo"
+          />
+
+          {/* <img
             loading="lazy"
             src="/img/AAPC_Logo.png"
             id="footer-img"
             className="nav-img"
             alt="AAPC_Logo"
-          />
+          /> */}
           <p
             style={{
               opacity: 0.6,
@@ -52,8 +64,8 @@ const Footer = () => {
             Contact Us
           </h2>
           <p onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')">
-            <span className="fas fa-location-arrow text-white"></span> 130 W 37th
-            Street New York, NY 10018
+            <span className="fas fa-location-arrow text-white"></span> 130 W
+            37th Street New York, NY 10018
           </p>
           <p onclick="window.location.href = 'tel:212-547-9050'">
             <span className="fas fa-phone text-white"></span>212-547-9050

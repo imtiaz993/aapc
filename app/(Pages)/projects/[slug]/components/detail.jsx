@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 import { projects } from "../data";
 
@@ -33,7 +34,16 @@ const Detail = () => {
                     data-target="#myCarousel"
                     data-slide-to={index.toString()}
                   >
-                    <img src={item} className="img-fluid" alt="..." />
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      loading="lazy"
+                      src={item}
+                      alt=""
+                      className="img-fluid"
+                      // className="carousel-item-img img-fluid selected-img carousel-thumbs-img"
+                    />
                   </div>
                 ))}
               </div>
@@ -48,7 +58,17 @@ const Detail = () => {
                     data-target="#myCarousel"
                     data-slide-to={index.toString()}
                   >
-                    <img src={item} className="img-fluid" alt="..." />
+                    {/* <img src={item} className="img-fluid" alt="..." /> */}
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      loading="lazy"
+                      src={item}
+                      alt=""
+                      className="img-fluid"
+                      // className="carousel-item-img img-fluid selected-img"
+                    />
                   </div>
                 ))}
 
@@ -58,32 +78,32 @@ const Detail = () => {
             </div>
           </div>
 
-          <Link href="#carousel-thumbs">
-            <div
-              className="carousel-control-prev"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="sr-only">Previous</span>
-            </div>
+          <Link
+            href="#carousel-thumbs"
+            className="carousel-control-prev"
+            role="button"
+            data-slide="prev"
+            style={{left: "-50px"}}
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Previous</span>
           </Link>
 
-          <Link href="#carousel-thumbs">
-            <div
-              className="carousel-control-next"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="sr-only">Next</span>
-            </div>
+          <Link
+            href="#carousel-thumbs"
+            className="carousel-control-next"
+            role="button"
+            data-slide="next"
+            style={{right: "-50px"}}
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Next</span>
           </Link>
         </div>
         {project?.about && <h3 className="about-text">{project.about}</h3>}

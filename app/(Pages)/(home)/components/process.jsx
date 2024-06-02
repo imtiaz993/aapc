@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 
 const Process = () => {
@@ -23,7 +24,10 @@ const Process = () => {
           <h1 className="g-s-h-text">Our Process</h1>
         </Tilt>
         <div id="stepContainer">
-          <img
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
             loading="lazy"
             id="stepImg"
             className="step-section-img"

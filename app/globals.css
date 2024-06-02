@@ -375,6 +375,9 @@ html{
     width: 185%; text-align: center
 }
 
+.h-auto {
+    height: auto;
+}
 
 @media screen and (max-width: 800px) {
     .top-wrapper{

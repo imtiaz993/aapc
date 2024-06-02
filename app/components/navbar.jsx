@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,7 +9,16 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
         <Link className="navbar-brand d-md-none" href="/">
-          <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            loading="lazy"
+            src="/img/AAPC_Logo.png"
+            className="h-auto"
+            alt=""
+          />
+          {/* <img loading="lazy" src="/img/AAPC_Logo.png" alt="" /> */}
         </Link>
         <button
           className="navbar-toggler navbar-dark"
@@ -43,7 +53,16 @@ const Navbar = () => {
               </Link>
             </li>
             <Link className="navbar-brand d-none d-md-block" href="/">
-              <img loading="lazy" src="/img/AAPC_Logo.png" alt="" />
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                loading="lazy"
+                src="/img/AAPC_Logo.png"
+                alt=""
+                className="h-auto"
+              />
+              {/* <img loading="lazy" src="/img/AAPC_Logo.png" alt="" /> */}
             </Link>
             <li className="nav-item">
               <Link

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
 
 const Planning = () => {
   useEffect(() => {
@@ -66,11 +67,19 @@ const Planning = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/planning-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/planning-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -102,11 +111,19 @@ const Planning = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/planning-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/planning-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -138,11 +155,19 @@ const Planning = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/planning-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/planning-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -176,11 +201,19 @@ const Planning = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/planning-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/planning-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -212,11 +245,19 @@ const Planning = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/planning-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/planning-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",

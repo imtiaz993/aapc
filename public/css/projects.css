@@ -136,7 +136,7 @@
     }
 
     .reverse{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 
     .project-left-pic, .project-right-pic{

@@ -55,7 +55,7 @@ const FeaturedProjects = () => {
         <div id="hotels">
           <div
             className="flex-container width-full"
-            style={{ display: "none" }}
+            style={{ display: "none", border: "none" }}
           >
             <div className="project-left">
               <Tilt

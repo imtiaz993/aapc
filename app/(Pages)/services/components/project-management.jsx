@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
 
 const ProjectManagement = () => {
   useEffect(() => {
@@ -67,11 +68,19 @@ const ProjectManagement = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/project-man-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/project-man-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -105,11 +114,19 @@ const ProjectManagement = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/project-man-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/project-man-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -143,11 +160,19 @@ const ProjectManagement = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/project-man-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/project-man-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -183,11 +208,19 @@ const ProjectManagement = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/project-man-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/project-man-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
@@ -220,11 +253,19 @@ const ProjectManagement = () => {
             tiltMaxAngleY={2}
           >
             <div className="gold-bg"></div>
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               alt="service-bg-img"
               src="/img/project-man-pic.png"
             />
+            {/* <img
+                loading="lazy"
+                alt="service-bg-img"
+                src="/img/project-man-pic.png"
+              /> */}
             <h1
               style={{
                 padding: "2vmax 2vmax 1vmax",
