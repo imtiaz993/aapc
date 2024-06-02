@@ -12,89 +12,30 @@ export const metadata = {
   keywords: "Architecture, AAPC, Building, Design, Drafting",
 };
 
-const Blog = () => {
+const Blog = async () => {
+  const BLOG_URL = "https://azark-blog-backend.onrender.com/api/posts";
+  let filteredPosts;
+  try {
+    const res = await fetch(BLOG_URL);
+    const json = await res.json();
+
+    filteredPosts = json
+      .reverse()
+      .filter(
+        (item) => item.categories.includes("aapc") && item.published === true
+      );
+  } catch (e) {
+    if (e.data) {
+      return { status: e.status, data: e.data };
+    }
+  }
+
   return (
     <div>
       <Navbar />
       <Topper />
-      <RecentPosts />
+      <RecentPosts filteredPosts={filteredPosts} />
       <Footer />
-
-      {/* <script>
-    const BLOG_URL = 'https://azark-blog-backend.onrender.com/api/posts';
-
-    async function customFetch() {
-        try {
-            const res = await fetch(BLOG_URL);
-            if (!res.ok) {
-                throw new Error(`${res.status} : ${res.statusText}`)
-            }
-
-            const json = await res.json();
-            console.log(json)
-            return json;
-        } catch (err) {
-            console.error(err.message)
-        }
-    }
-
-    const createListItem = (item) => {
-
-        function rfc3986EncodeURIComponent (str) {
-            return encodeURIComponent(str).replace(/[!'()*]/g, escape);
-        }
-
-        if (item.categories.includes("aapc") && item.published === true) {
-
-            // const date = new Date(item.updatedAt);
-            // const formattedDate = date.getDate() +  " " + date.toLocaleString('default', { month: 'long' }) + " " + date.getFullYear();
-            const formattedCreated = new Date(item.createdAt).toLocaleDateString('en-US', {
-                month: "long",  // Use "short" for abbreviated month
-                day: "numeric",
-                year: "numeric",
-            })
-            return ` <div className="flex-container width-full reverse" onclick="location.assign('/blog-single?id=${rfc3986EncodeURIComponent(item.identifier)}');" style={{marginTop: "5%"}>
-                <div className="project-left">
-                    <div className="project-left-content">
-                        <h1 data-tilt data-tilt-glare data-tilt-max-glare="0.1">
-                           ${item.title}
-                        </h1><br/>
-                        <h5>${item.author}</h5>
-                        <h5 style={{float: "right"}}>${formattedCreated}</h5>
-                        <h4>${item.clincher}</h4>
-                        </div>
-                </div>
-                <div className="project-right">
-                    <div className="project-right-pic" style={{background: "url(${item.photo})", backgroundSize: "cover"}} data-tilt data-tilt-glare data-tilt-max-glare="0.1"></div>
-                </div>
-            </div>`
-        }
-    }
-
-    const getPosts = async () => {
-        const data = await customFetch();
-        const posts = data.reverse().map(posts => posts);
-        const listItems = posts.map(t => createListItem(t)).join("")
-
-        const insertBefore = (element, htmlString) => element.insertAdjacentHTML("afterbegin", htmlString);
-
-        const element = document.getElementById("hotels");
-
-        return insertBefore(element, `${listItems}`)
-    }
-
-    getPosts()
-
-
-    /*fetch(BLOG_URL)
-       .then(res => res.json())
-       .then(console.log); */
-      /*
-
-</script>
-
-
- */}
     </div>
   );
 };
