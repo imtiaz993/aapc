@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 (function () {
     $.fn.card_slideshow = function (args) {
         this.each(function (index, slideshow_el) {

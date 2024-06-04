@@ -1,16 +1,7 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import { projects } from "../data";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 
-const Topper = () => {
-  const pathname = usePathname();
-  const project = projects.find(
-    (project) => project.slug === pathname.split("/")[2]
-  );
-
+const Topper = ({ project }) => {
   return (
     <div>
       <Tilt
@@ -32,7 +23,10 @@ const Topper = () => {
           top: 0,
         }}
       ></Tilt>
-      <div className="container" style={{ position: "relative", maxWidth: "1140px" }}>
+      <div
+        className="container"
+        style={{ position: "relative", maxWidth: "1140px" }}
+      >
         <div className="carousel-container row">
           <Tilt
             glareEnable={true}

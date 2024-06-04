@@ -2,16 +2,12 @@ import Script from "next/script";
 import Calendly from "./components/calendly";
 import "./globals.css";
 
-export const metadata = {
-  title: "AAPC",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -64,7 +60,6 @@ export default function RootLayout({ children }) {
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" />
         <Script src="/js/script.js" />
-        <Script src="/js/vanilla-tilt.js" />
       </body>
     </html>
   );

@@ -1,18 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import { projects } from "../data";
 
-const Detail = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const project = projects.find(
-    (project) => project.slug === pathname.split("/")[2]
-  );
-
+const Detail = ({ project }) => {
   return (
     <div className="flex-container" style={{ position: "relative" }}>
       <div className="flex-item-left"></div>
@@ -83,7 +73,7 @@ const Detail = () => {
             className="carousel-control-prev"
             role="button"
             data-slide="prev"
-            style={{left: "-50px"}}
+            style={{ left: "-50px" }}
           >
             <span
               className="carousel-control-prev-icon"
@@ -97,7 +87,7 @@ const Detail = () => {
             className="carousel-control-next"
             role="button"
             data-slide="next"
-            style={{right: "-50px"}}
+            style={{ right: "-50px" }}
           >
             <span
               className="carousel-control-next-icon"

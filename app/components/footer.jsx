@@ -63,14 +63,29 @@ const Footer = () => {
           >
             Contact Us
           </h2>
-          <p onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')">
+          <p
+            onClick={() => {
+              window.open(
+                "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                "_blank"
+              );
+            }}
+          >
             <span className="fas fa-location-arrow text-white"></span> 130 W
             37th Street New York, NY 10018
           </p>
-          <p onclick="window.location.href = 'tel:212-547-9050'">
+          <p
+            onClick={() => {
+              window.location.href = "tel:212-547-9050";
+            }}
+          >
             <span className="fas fa-phone text-white"></span>212-547-9050
           </p>
-          <p onclick="window.location.href = 'mailto:admin@aapc.nyc';">
+          <p
+            onClick={() => {
+              window.location.href = "mailto:admin@aapc.nyc";
+            }}
+          >
             <span className="fas fa-envelope text-white"></span>admin@aapc.nyc
           </p>
         </div>
