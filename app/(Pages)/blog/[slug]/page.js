@@ -39,12 +39,12 @@ const BlogSingle = async ({ params }) => {
       <div>
         <Navbar />
         <Topper post={post} />
-        <div className="flex-container" style={{ position: "relative" }}>
+        <div className="flex-container" style={{ position: "relative", borderTop: "none" }}>
           <div className="flex-item-left"></div>
           <div className="flex-item-right">
             <div
               id="the-text"
-              className="about-text"
+              className="about-text hotels"
               dangerouslySetInnerHTML={{ __html: post.desc }}
             ></div>
           </div>

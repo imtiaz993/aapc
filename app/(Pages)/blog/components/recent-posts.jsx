@@ -63,7 +63,7 @@ const RecentPosts = ({ filteredPosts }) => {
             {filteredPosts.map((item) => (
               <div
                 key={item.identifier}
-                className="flex-container width-full reverse"
+                className="flex-container width-full reverse flex-container-width"
                 onClick={() => {
                   router.push(
                     `/blog/${rfc3986EncodeURIComponent(
@@ -71,7 +71,7 @@ const RecentPosts = ({ filteredPosts }) => {
                     )}`
                   );
                 }}
-                style={{ marginTop: "5%", borderTop: "0px" }}
+                style={{ marginTop: "5%", borderTop: "none" }}
               >
                 <div className="project-left">
                   <div className="project-left-content">
@@ -85,7 +85,7 @@ const RecentPosts = ({ filteredPosts }) => {
                     >
                       <h1>{item.title}</h1>
                     </Tilt>
-                    <br />
+                    {/* <br /> */}
                     <h5>{item.author}</h5>
                     <h5 style={{ float: "right" }}>
                       {new Date(item.createdAt).toLocaleDateString("en-US", {

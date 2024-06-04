@@ -67,10 +67,12 @@
     width: 50px;
 }
 
-.flex-container {
+/* .flex-container {
     border: none;
+} */
+.flex-container-width {
+    width: 100%;
 }
-
 .about-text {
     margin: 2% 5%;
 
@@ -177,7 +179,12 @@
     margin: 5vmax;
 }
 
-#hotels img{
+.hotels-img {
+    width: 100%;
+    padding: 5%;
+}
+
+.hotels img {
     width: 100%;
     padding: 5%;
 }
@@ -193,6 +200,10 @@
     .carousel-container {
         margin-top: 20vh;
         text-align: center;
+    }
+
+    .carousel-container div {
+        padding: 0px;
     }
 
     .project-title {
@@ -230,6 +241,14 @@
         scale: .7;
         margin-left: 10%;
         margin-top: -15%;
+    }
+
+    .container {
+        margin-top: 172px;
+    }
+    
+    .about-text h2{
+        font-size: 2rem !important;
     }
 
 }
