@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -34,7 +34,6 @@ const Detail = ({ project }) => {
                       src={item}
                       alt=""
                       className="img-fluid"
-                      // className="carousel-item-img img-fluid selected-img carousel-thumbs-img"
                     />
                   </div>
                 ))}
@@ -42,27 +41,28 @@ const Detail = ({ project }) => {
             </div>
             <div className="carousel-item">
               <div className="row mx-0">
-                {project.carouselmages.slice(6, 8).map((item, index) => (
-                  <div
-                    key={index}
-                    id={`carousel-selector-${index}`}
-                    className="thumb col-4 col-sm-2 px-1 py-2 selected"
-                    data-target="#myCarousel"
-                    data-slide-to={index.toString()}
-                  >
-                    {/* <img src={item} className="img-fluid" alt="..." /> */}
-                    <Image
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      loading="lazy"
-                      src={item}
-                      alt=""
-                      className="img-fluid"
-                      // className="carousel-item-img img-fluid selected-img"
-                    />
-                  </div>
-                ))}
+                {project.carouselmages.length > 6 &&
+                  project.carouselmages
+                    .slice(6, project.carouselmages.length)
+                    .map((item, index) => (
+                      <div
+                        key={index}
+                        id={`carousel-selector-${index + 6}`}
+                        className="thumb col-4 col-sm-2 px-1 py-2 selected"
+                        data-target="#myCarousel"
+                        data-slide-to={(index + 6).toString()}
+                      >
+                        <Image
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          loading="lazy"
+                          src={item}
+                          alt=""
+                          className="img-fluid"
+                        />
+                      </div>
+                    ))}
 
                 <div className="col-2 px-1 py-2"></div>
                 <div className="col-2 px-1 py-2"></div>
