@@ -9,6 +9,8 @@ import Visualization from "./visualization";
 
 const ServicesWrapper = () => {
   const [activeTab, setActiveTab] = useState("Planning");
+
+  console.log(activeTab);
   return (
     <>
       <Topper activeTab={activeTab} />
