@@ -23,11 +23,12 @@ const Topper = ({ project }) => {
           backdropFilter: "blur(12px)",
           marginLeft: "10%",
           top: 0,
+          maxWidth: "100%",
         }}
       ></Tilt>
       <div
         className="container"
-        style={{ position: "relative", maxWidth: "1140px" }}
+        style={{ position: "relative", maxWidth: "1140px", height: "auto" }}
       >
         <div className="carousel-container row">
           <Tilt
@@ -42,7 +43,7 @@ const Topper = ({ project }) => {
             {project.name}
           </Tilt>
 
-          <div id="myCarousel" className="carousel slide" data-ride="carousel">
+          <div id="myCarousel" className="carousel slide px-0" data-ride="carousel">
             <div className="carousel-inner">
               {project.carouselmages.map((item, index) => (
                 <div

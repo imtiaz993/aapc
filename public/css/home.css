@@ -356,6 +356,7 @@
     }
 
     .g-s-c-text-top {
+        margin-left: 0px;    
         width: 100%;
         text-align: center;
         border: none;

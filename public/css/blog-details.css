@@ -97,7 +97,7 @@
 }
 
 .stats {
-    width: 80%;
+    width: 80% !important;
     background: #FFDC32;
     display: flex;
     justify-content: space-evenly;
@@ -213,7 +213,7 @@
     }
 
     .stats{
-        width: 100%;
+        width: 100% !important;
     }
 
     .stats h3 {

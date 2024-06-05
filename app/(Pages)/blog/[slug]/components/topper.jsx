@@ -43,7 +43,7 @@ const Topper = ({ post }) => {
       ></Tilt>
       <div
         className="container"
-        style={{ position: "relative", maxWidth: "1140px" }}
+        style={{ position: "relative", maxWidth: "1140px", height: "auto" }}
       >
         <div className="carousel-container row">
           <Tilt

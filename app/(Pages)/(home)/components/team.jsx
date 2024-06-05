@@ -213,14 +213,14 @@ const Team = () => {
           Our Team
         </h1>
       </div>
-      <div className="flex-item-right">
+      <div className="flex-item-right" style={{overflow: "hidden"}}>
         <div id="biosection" className="flex-container home-service">
           <div
             style={{
               flex: "30%",
             }}
           >
-            <div className="container">
+            <div className="container" style={{margin: 0, padding: 0}}>
               <div className="card-stack">
                 <div className="ul-card card-list">
                   <Tilt

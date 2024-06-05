@@ -13,8 +13,8 @@ const Topper = () => {
         tiltMaxAngleY={2}
         style={{
           position: "absolute",
-          width: "45vmax",
-          height: "60vmin",
+          width: "45%",
+          height: "60vh",
           background:
             "linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%)",
           boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

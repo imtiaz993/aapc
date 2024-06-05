@@ -2,6 +2,27 @@
   text-align: left !important;
 }
 
+#planning {
+  -moz-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -o-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -webkit-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+}
+
+#visualization {
+  -moz-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -o-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -webkit-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+}
+
+#project-management {
+  -moz-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -o-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  -webkit-transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+  transition: all 0.2s ease-in, visibility 0s, opacity 0.5s linear;
+}
+
 .vendor-box {
   position: relative;
 }
@@ -80,7 +101,7 @@
 
 @media screen and (max-width: 900px) {
   .service-section {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .right-service {

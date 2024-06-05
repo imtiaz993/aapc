@@ -54,7 +54,7 @@ const FeaturedProjects = () => {
       <div className="flex-item-right" style={{ position: "relative" }}>
         <div id="hotels">
           <div
-            className="flex-container width-full"
+            className="flex-container width-full flex-col flex-lg-row"
             style={{ display: "none", border: "none" }}
           >
             <div className="project-left">
@@ -95,7 +95,7 @@ const FeaturedProjects = () => {
             onClick={() => {
               router.push("/projects/Gotham_Hall");
             }}
-            style={{ marginTop: "5%" }}
+            style={{ marginTop: "5%", border: "none" }}
           >
             <div className="project-left">
               <div className="project-left-content">
@@ -137,10 +137,11 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full"
+            className="flex-container width-full flex-col flex-lg-row"
             onClick={() => {
               router.push("/projects/4428_55th_Ave");
             }}
+            style={{ border: "none" }}
           >
             <div className="project-left">
               <Tilt
@@ -186,6 +187,7 @@ const FeaturedProjects = () => {
             onClick={() => {
               router.push("/projects/480_7th_Ave");
             }}
+            style={{ border: "none" }}
           >
             <div className="project-left">
               <div className="project-left-content">
@@ -226,10 +228,11 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full"
+            className="flex-container width-full flex-col flex-lg-row"
             onClick={() => {
               router.push("/projects/525_7th_Ave");
             }}
+            style={{ border: "none" }}
           >
             <div className="project-left">
               <Tilt
@@ -319,7 +322,7 @@ const FeaturedProjects = () => {
             onClick={() => {
               router.push("/projects/113_Franklin");
             }}
-            style={{ marginBottom: "0" }}
+            style={{ marginBottom: "0", border: "none"  }}
           >
             <div className="project-left">
               <div className="project-left-content">
@@ -362,11 +365,11 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full"
+            className="flex-container width-full flex-col flex-lg-row"
             onClick={() => {
               router.push("/projects/113_Franklin");
             }}
-            style={{ display: "none" }}
+            style={{ display: "none", border: "none"  }}
           >
             <div className="project-left">
               <Tilt
