@@ -22,7 +22,9 @@ const Detail = ({ project }) => {
                   <div
                     key={index}
                     id={`carousel-selector-${index}`}
-                    className="thumb col-4 col-sm-2 px-1 py-2 selected"
+                    className={`thumb col-4 col-sm-2 px-1 py-2 ${
+                      index === 0 ? "selected" : ""
+                    }`}
                     data-target="#myCarousel"
                     data-slide-to={index.toString()}
                   >
@@ -48,7 +50,9 @@ const Detail = ({ project }) => {
                       <div
                         key={index}
                         id={`carousel-selector-${index + 6}`}
-                        className="thumb col-4 col-sm-2 px-1 py-2 selected"
+                        className={`thumb col-4 col-sm-2 px-1 py-2 ${
+                          index === 0 ? "selected" : ""
+                        }`}
                         data-target="#myCarousel"
                         data-slide-to={(index + 6).toString()}
                       >
