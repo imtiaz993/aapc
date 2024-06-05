@@ -5,15 +5,24 @@ import Topper from "./components/topper";
 import "../../../../public/css/home.css";
 import "../../../../public/css/blog-details.css";
 
-export const metadata = {
-  title: "AAPC | Blog Single",
-  description:
-    "AAPC operates in seamless collaboration with the NYC Department of Buildings (DOB) and other pertinent entities throughout the architectural process demonstrating a meticulous commitment to not only adhere to regulations but also navigate them with precision when intervening in established spaces",
-  keywords: "Architecture, AAPC, Building, Design, Drafting",
-};
+const BLOG_URL = "https://azark-blog-backend.onrender.com/api/posts/title/";
+
+export async function generateMetadata({ params }) {
+  const ID = params["slug"];
+  const res = await fetch(BLOG_URL + ID);
+  const json = await res.json();
+  const post = json;
+
+  return {
+    title: "AAPC | " + post?.title || "",
+    description:
+      "AAPC operates in seamless collaboration with the NYC Department of Buildings (DOB) and other pertinent entities throughout the architectural process demonstrating a meticulous commitment to not only adhere to regulations but also navigate them with precision when intervening in established spaces",
+    keywords:
+      post?.keywords || "Architecture, AAPC, Building, Design, Drafting",
+  };
+}
 
 const BlogSingle = async ({ params }) => {
-  const BLOG_URL = "https://azark-blog-backend.onrender.com/api/posts/title/";
   const ID = params["slug"];
 
   let post;
