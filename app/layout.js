@@ -60,6 +60,7 @@ export default function RootLayout({ children }) {
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" />
         <Script src="/js/script.js" />
+        <Script src="/js/project-details.js" />
       </body>
     </html>
   );

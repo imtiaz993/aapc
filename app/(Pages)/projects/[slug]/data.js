@@ -19,10 +19,6 @@ export const projects = [
     year: "1924",
     about:
       "1356 Broadway stands as a building unlike any other, steeped in multiple layers of history. As a protected landmark, AAPC embraced the responsibility of restoring its interior, meticulously ensuring alignment with the building&apos;s rich history. We approached this endeavor with care, crafting each entrusted area to unveil a story that had been entwined within the passing years of the building. These meticulously restored spaces not only narrate a tale but also invite guests to experience each room in a distinct manner, transporting them to a space that is truly like no other.",
-    aboutVideo: "/project/content/44-28 55th ave/The-Building-Finale.mp4",
-    about2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut porta metus. Quisque justo ipsum, auctor id lorem ut, hendrerit eleifend enim. Cras eleifend lorem sit amet odio consectetur tempus. Mauris et metus id turpis varius luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut porta metus. Quisque justo ipsum, auctor id orem ut, hendrerit eleifend enim.",
-    about2Video: "/project/content/44-28 55th ave/The-Building-Finale.mp4",
     otherProjects: [
       {
         title: "113 Franklin",
