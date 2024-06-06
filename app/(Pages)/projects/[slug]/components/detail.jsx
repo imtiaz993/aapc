@@ -144,7 +144,7 @@ const Detail = ({ project }) => {
                 backgroundSize: "cover",
               }}
               onClick={() => {
-                router.push(item.slug);
+                window.location.href = item.slug;
               }}
             >
               <Tilt
@@ -154,7 +154,7 @@ const Detail = ({ project }) => {
                 transitionSpeed={300}
                 tiltMaxAngleX={2}
                 tiltMaxAngleY={2}
-                style={{height: "100%"}}
+                style={{ height: "100%" }}
               >
                 <h3>{item.title}</h3>
                 <button className="button project-button">
