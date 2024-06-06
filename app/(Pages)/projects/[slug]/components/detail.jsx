@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 const Detail = ({ project }) => {
   return (
-    <div className="flex-container" style={{ position: "relative" }}>
+    <div className="flex-container" style={{ position: "relative", borderTop: "none" }}>
       <div className="flex-item-left"></div>
 
       <div className="flex-item-right">

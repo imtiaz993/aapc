@@ -13,9 +13,10 @@ const Topper = ({ project }) => {
         transitionSpeed={300}
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
+        className="tilt-width"
         style={{
           position: "absolute",
-          width: "45vmax",
+          // width: "45vmax",
           height: "60vmin",
           background:
             "linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%)",

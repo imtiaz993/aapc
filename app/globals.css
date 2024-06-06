@@ -333,7 +333,15 @@ html{
         flex: 0%;
     }
 }
+.tilt-width {
+    width: 45vmax;
+}
 
+@media (max-width: 400px) {
+    .tilt-width{
+        width: 90% !important;
+    }
+}
 @media (max-width: 500px) {
     .left-text {
         font-size: 5vmin;
