@@ -92,7 +92,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              window.href.location = "/projects/Gotham_Hall";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/Gotham_Hall")
+                : "";
             }}
             style={{ marginTop: "5%", border: "none" }}
           >
@@ -137,7 +139,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              window.href.location = "/projects/4428_55th_Ave";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/4428_55th_Ave")
+                : "";
             }}
             style={{ border: "none" }}
           >
@@ -182,7 +186,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              window.href.location = "/projects/480_7th_Ave";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/480_7th_Ave")
+                : "";
             }}
             style={{ border: "none" }}
           >
@@ -226,7 +232,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              window.href.location = "/projects/525_7th_Ave";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/525_7th_Ave")
+                : "";
             }}
             style={{ border: "none" }}
           >
@@ -270,7 +278,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              window.href.location = "/projects/712_W_125th";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/712_W_125th")
+                : "";
             }}
             style={{ display: "none" }}
           >
@@ -314,7 +324,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              window.href.location = "/projects/113_Franklin";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/113_Franklin")
+                : "";
             }}
             style={{ marginBottom: "0", border: "none" }}
           >
@@ -360,7 +372,9 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              window.href.location = "/projects/113_Franklin";
+              typeof window !== "undefined"
+                ? (window.location.href = "/projects/113_Franklin")
+                : "";
             }}
             style={{ display: "none", border: "none" }}
           >
