@@ -100,7 +100,7 @@ const Footer = () => {
           </h2>
           <p
             onClick={() => {
-              router.push("/");
+              window.href.location="/";
             }}
           >
             Home

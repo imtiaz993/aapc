@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
-        <Link className="navbar-brand d-md-none" href="/">
+        <a className="navbar-brand d-md-none" href="/">
           <Image
             width={0}
             height={0}
@@ -19,7 +19,7 @@ const Navbar = () => {
             alt=""
           />
           {/* <img loading="lazy" src="/img/AAPC_Logo.png" alt="" /> */}
-        </Link>
+        </a>
         <button
           className="navbar-toggler navbar-dark"
           type="button"
@@ -34,13 +34,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link
+              <a
                 className={`nav-link ${pathname === "/" ? "active" : ""}`}
                 aria-current="page"
                 href="/"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <Link
@@ -52,7 +52,7 @@ const Navbar = () => {
                 Services
               </Link>
             </li>
-            <Link className="navbar-brand d-none d-md-block" href="/">
+            <a className="navbar-brand d-none d-md-block" href="/">
               <Image
                 width={0}
                 height={0}
@@ -63,7 +63,7 @@ const Navbar = () => {
                 className="h-auto"
               />
               {/* <img loading="lazy" src="/img/AAPC_Logo.png" alt="" /> */}
-            </Link>
+            </a>
             <li className="nav-item">
               <Link
                 className={`nav-link ${

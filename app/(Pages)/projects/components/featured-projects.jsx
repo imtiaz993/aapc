@@ -92,7 +92,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              router.push("/projects/Gotham_Hall");
+              window.href.location = "/projects/Gotham_Hall";
             }}
             style={{ marginTop: "5%", border: "none" }}
           >
@@ -137,7 +137,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              router.push("/projects/4428_55th_Ave");
+              window.href.location = "/projects/4428_55th_Ave";
             }}
             style={{ border: "none" }}
           >
@@ -182,7 +182,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              router.push("/projects/480_7th_Ave");
+              window.href.location = "/projects/480_7th_Ave";
             }}
             style={{ border: "none" }}
           >
@@ -226,7 +226,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              router.push("/projects/525_7th_Ave");
+              window.href.location = "/projects/525_7th_Ave";
             }}
             style={{ border: "none" }}
           >
@@ -270,7 +270,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              router.push("/projects/712_W_125th");
+              window.href.location = "/projects/712_W_125th";
             }}
             style={{ display: "none" }}
           >
@@ -314,7 +314,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full reverse"
             onClick={() => {
-              router.push("/projects/113_Franklin");
+              window.href.location = "/projects/113_Franklin";
             }}
             style={{ marginBottom: "0", border: "none" }}
           >
@@ -360,7 +360,7 @@ const FeaturedProjects = () => {
           <div
             className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
-              router.push("/projects/113_Franklin");
+              window.href.location = "/projects/113_Franklin";
             }}
             style={{ display: "none", border: "none" }}
           >
