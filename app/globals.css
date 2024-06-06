@@ -117,7 +117,7 @@ html{
 }
 
 .active {
-    border-bottom: #FFDC32 2px solid;
+    border-bottom: #FFDC32 2px solid !important;
 }
 
 @media screen and (min-width: 768px) {
