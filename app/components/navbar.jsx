@@ -35,7 +35,7 @@ const Navbar = () => {
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <a
-                className={`nav-link ${pathname === "/" ? "active" : ""}`}
+                className={`nav-link ${pathname === "/" ? "activeLink" : ""}`}
                 aria-current="page"
                 href="/"
               >
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  pathname.includes("/services") ? "active" : ""
+                  pathname.includes("/services") ? "activeLink" : ""
                 }`}
                 href="/services"
               >
@@ -67,7 +67,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  pathname.includes("/projects") ? "active" : ""
+                  pathname.includes("/projects") ? "activeLink" : ""
                 }`}
                 href="/projects"
               >
@@ -77,7 +77,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  pathname.includes("/contact") ? "active" : ""
+                  pathname.includes("/contact") ? "activeLink" : ""
                 }`}
                 href="/contact"
               >

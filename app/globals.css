@@ -116,8 +116,8 @@ html{
     margin: 0em 1.5em;
 }
 
-.active {
-    border-bottom: #FFDC32 2px solid !important;
+.activeLink {
+    border-bottom: #FFDC32 2px solid;
 }
 
 @media screen and (min-width: 768px) {
