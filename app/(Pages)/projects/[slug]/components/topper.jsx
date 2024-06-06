@@ -49,7 +49,7 @@ const Topper = ({ project }) => {
                 <div
                   key={index}
                   className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  data-slide-number={index}
+                  data-slide-number={index.toString()}
                 >
                   <Image
                     width={0}
