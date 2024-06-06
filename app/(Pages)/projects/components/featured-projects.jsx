@@ -54,7 +54,7 @@ const FeaturedProjects = () => {
       <div className="flex-item-right" style={{ position: "relative" }}>
         <div id="hotels">
           <div
-            className="flex-container width-full flex-col flex-lg-row"
+            className="flex-container width-full flex-column flex-lg-row"
             style={{ display: "none", border: "none" }}
           >
             <div className="project-left">
@@ -80,7 +80,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>1412 Offices Floors</h1>
                 </Tilt>
-                <br />
                 <h5>Luxury Showrooms</h5>
                 <h4>
                   AAPC was entrusted with the responsibility of creating an
@@ -109,7 +108,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>Gotham Hall</h1>
                 </Tilt>
-                <br />
                 <h5>Hospitality</h5>
                 <h4>
                   1356 Broadway stands as a building unlike any other, steeped
@@ -137,7 +135,7 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full flex-col flex-lg-row"
+            className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
               router.push("/projects/4428_55th_Ave");
             }}
@@ -171,7 +169,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>44-28 55th Ave</h1>
                 </Tilt>
-                <br />
                 <h5>Industrial</h5>
                 <h4>
                   Our team successfully lead the extension of a manufacturing
@@ -201,7 +198,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>480 7th Ave</h1>
                 </Tilt>
-                <br />
                 <h5>Retail</h5>
                 <h4>
                   The NYC retail experience is diverse and multifaceted, and for
@@ -228,7 +224,7 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full flex-col flex-lg-row"
+            className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
               router.push("/projects/525_7th_Ave");
             }}
@@ -261,7 +257,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>525 7th Ave</h1>
                 </Tilt>
-                <br />
                 <h5>Offices</h5>
                 <h4>
                   Elegance and high quality were the dual focal points guiding
@@ -291,7 +286,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>712 w 125th</h1>
                 </Tilt>
-                <br />
                 <h5>Restaurant</h5>
                 <h4>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -322,7 +316,7 @@ const FeaturedProjects = () => {
             onClick={() => {
               router.push("/projects/113_Franklin");
             }}
-            style={{ marginBottom: "0", border: "none"  }}
+            style={{ marginBottom: "0", border: "none" }}
           >
             <div className="project-left">
               <div className="project-left-content">
@@ -336,7 +330,6 @@ const FeaturedProjects = () => {
                 >
                   <h1>113 Franklin</h1>
                 </Tilt>
-                <br />
                 <h5>Restaurant</h5>
                 <h4>
                   The 113 Franklin project involves extensive interior
@@ -365,11 +358,11 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div
-            className="flex-container width-full flex-col flex-lg-row"
+            className="flex-container width-full flex-column flex-lg-row"
             onClick={() => {
               router.push("/projects/113_Franklin");
             }}
-            style={{ display: "none", border: "none"  }}
+            style={{ display: "none", border: "none" }}
           >
             <div className="project-left">
               <Tilt
@@ -399,7 +392,6 @@ const FeaturedProjects = () => {
                 >
                   <h1> 113 Franklin</h1>
                 </Tilt>
-                <br />
                 <h5>Restaurants</h5>
                 <h4>
                   The 113 Franklin project involves extensive interior

@@ -164,10 +164,10 @@
 }
 
 .project-button {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    scale: .7;
+    position: absolute !important;
+    bottom: 5% !important;
+    right: 5% !important;
+    scale: .7 !important;
     -moz-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
     -o-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
     -webkit-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;

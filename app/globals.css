@@ -49,6 +49,7 @@ html{
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 100 !important;
+    padding: .5rem 1rem !important;
 }
 
 .nav-list {
