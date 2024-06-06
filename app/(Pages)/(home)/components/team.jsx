@@ -149,16 +149,41 @@ const Team = () => {
             ease: "swing",
           });
         })();
-      };
-      var $card = $(".card");
-      var lastCard = $(".card-list .card").length - 1;
 
-      var biosection = document.getElementById("biosection");
+        var $card = $(".card");
+        var lastCard = $(".card-list .card").length - 1;
 
-      setInterval(changeTimer, 10000);
+        var biosection = document.getElementById("biosection");
 
-      function changeTimer() {
-        if (!biosection.matches(":hover")) {
+        setInterval(changeTimer, 10000);
+
+        function changeTimer() {
+          if (!biosection.matches(":hover")) {
+            var prependList = function () {
+              if ($(".card").hasClass("activeNow")) {
+                var $slicedCard = $(".card")
+                  .slice(lastCard)
+                  .removeClass("transformThis activeNow");
+                $(".ul-card").prepend($slicedCard);
+              }
+            };
+            $(".li-card")
+              .last()
+              .removeClass("transformPrev")
+              .addClass("transformThis")
+              .prev()
+              .addClass("activeNow");
+            setTimeout(function () {
+              prependList();
+            }, 150);
+
+            toggleContent();
+          } else {
+            console.log("worked");
+          }
+        }
+
+        $(".next").click(function () {
           var prependList = function () {
             if ($(".card").hasClass("activeNow")) {
               var $slicedCard = $(".card")
@@ -176,32 +201,8 @@ const Team = () => {
           setTimeout(function () {
             prependList();
           }, 150);
-
-          toggleContent();
-        } else {
-          console.log("worked");
-        }
-      }
-
-      $(".next").click(function () {
-        var prependList = function () {
-          if ($(".card").hasClass("activeNow")) {
-            var $slicedCard = $(".card")
-              .slice(lastCard)
-              .removeClass("transformThis activeNow");
-            $(".ul-card").prepend($slicedCard);
-          }
-        };
-        $(".li-card")
-          .last()
-          .removeClass("transformPrev")
-          .addClass("transformThis")
-          .prev()
-          .addClass("activeNow");
-        setTimeout(function () {
-          prependList();
-        }, 150);
-      });
+        });
+      };
     }
   }, []);
 
@@ -212,14 +213,14 @@ const Team = () => {
           Our Team
         </h1>
       </div>
-      <div className="flex-item-right" style={{ overflow: "hidden" }}>
+      <div className="flex-item-right" style={{overflow: "hidden"}}>
         <div id="biosection" className="flex-container home-service">
           <div
             style={{
               flex: "30%",
             }}
           >
-            <div className="container" style={{ margin: 0, padding: 0 }}>
+            <div className="container" style={{margin: 0, padding: 0}}>
               <div className="card-stack">
                 <div className="ul-card card-list">
                   <Tilt
