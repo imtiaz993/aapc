@@ -44,7 +44,7 @@ const Topper = ({ project }) => {
             {project.name}
           </Tilt>
 
-          <div id="myCarousel" className="carousel slide px-0" data-ride="carousel">
+          <div id="myCarousel" className="carousel slide px-0">
             <div className="carousel-inner">
               {project.carouselmages.map((item, index) => (
                 <div

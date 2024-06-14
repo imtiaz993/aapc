@@ -5,6 +5,7 @@ $(document).ready(function () {
   $("#carousel-thumbs").carousel({
     interval: false,
   });
+  $("#carousel-thumbs").carousel('pause'); 
 
   // handles the carousel thumbnails
   // https://stackoverflow.com/questions/25752187/bootstrap-carousel-with-thumbnails-multiple-carousel

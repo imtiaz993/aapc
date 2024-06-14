@@ -13,7 +13,6 @@ const Detail = ({ project }) => {
         <div
           id="carousel-thumbs"
           className="carousel slide"
-          data-ride="carousel"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
