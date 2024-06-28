@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
       <body id="root">
         {children}
         <Calendly />
+        <Script src="https://cdn.userway.org/widget.js" data-account="Oa0aO0cYPl" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
         <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" />
